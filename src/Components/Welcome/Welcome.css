@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.logo{
+    height: 10vh;
+    width: 10vh;
+    margin-top: 5vh;
+    border-radius: 50%;
+    border: 2px solid blue;
+    padding: 3px;
+}
+.welcomeimg{
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    margin: 4vh ;
+
+}
+#btn{
+    padding: 1.5vh;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 45px;
+    margin-bottom: 1vh;
+}
+#wish{
+    font-weight: bolder;
+}
+#text{
+    line-height: 2.0;
+}
+

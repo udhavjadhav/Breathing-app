@@ -122,7 +122,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar id='appbar'color='secondary' position="static">
+      <AppBar id='appbar'color='primary' position="static">
         <Toolbar>
         {/* <img style={{height:'15vh'}} src="./src/assets/adaptive-icon.png" alt="logo" /> */}
           <IconButton
