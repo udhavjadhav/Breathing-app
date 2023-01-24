@@ -6,15 +6,15 @@
     /* background-color: #FFDEE9;
 background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
 
-    height: 110vh;
+    height: 100vh
 }
 #submain{
-    width: 50vh;
-    height: 65vh;
-    max-width: 100%;
-    padding: 3vh;
+    width: 60vh;
+    height: auto;
+    padding: 2vh;
     margin-top: 5vh;
     margin-bottom: 2vh;
+   
     /* height: 90vh; */
     /* background-color: #D9AFD9;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */

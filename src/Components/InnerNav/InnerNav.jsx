@@ -5,6 +5,7 @@ import BedtimeIcon from '@mui/icons-material/Bedtime';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import SpaIcon from '@mui/icons-material/Spa';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import '../Navbar/Navbar.css'
 function InnerNav() {
     const Navigate = useNavigate();
     const handleClick = () =>{
@@ -25,7 +26,7 @@ function InnerNav() {
    
 
   return (
-    <div className='container-fluid d-flex shadow pt-2 text-center'>
+    <div id='appbar' className='container-fluid d-flex shadow pt-2 text-center mw-90'>
         <div className='container d-flex'>
             <p style={{cursor:'pointer'}} onClick={handleClick}><HomeIcon sx={{text:'center'}} fontSize='medium'/><br /> Home</p>
         </div>

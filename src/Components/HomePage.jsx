@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Button } from '@mui/material'
-import Navbar from './Navbar';
+import Navbar from './Navbar/Navbar';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import Divider from '@mui/material/Divider';
 import HomeInfo from './HomeInfo';
 import SongsDetails from './SongsDetails';
-import InnerNav from './InnerNav';
+import InnerNav from './InnerNav/InnerNav';
 
 function HomePage() {
 
@@ -31,19 +31,16 @@ function HomePage() {
 
             <div className="container-fluid p-3">
                 <div className="row mx-5 mt-5">
-                    <div className="col-sm-5">
+                    <div className="col-sm-4">
                         <h1 className='font-weight-bolder'>{wish + Name}</h1>
                         <Button variant='outlined'>{date}</Button>
                         <Button sx={{ m: 2 }} variant='outlined'>{time}</Button><br />
 
                     </div>
-                    <div className='col-sm-4 mt-5'>
-                        {/* <Button className='shadow' variant='outlined' sx={{ height: '15vh', width: '15vh', borderRadius: '50%' }}>Start Breathing</Button> */}
-
-                    </div>
-                    <div className="col-sm-2 align-items-center">
+                   
+                    <div className="col-sm-8 align-items-center">
                         {/* <img src="https://cdn.doyou.com/articles/6a-1575918606525.gif=w1080" alt=""  /> */}
-                        <img style={{ height: '40vh' }} src="https://media1.giphy.com/media/XyakWW6WwplIPSHfuR/giphy.gif" alt="" />
+                        <img style={{ height: '35vh' }} src="https://media1.giphy.com/media/XyakWW6WwplIPSHfuR/giphy.gif" alt="" />
                         {/* <img style={{ height: '40vh' }} src="https://www.artofliving.org/sites/www.artofliving.org/files/wysiwyg_imageupload/6d7faeab-ezgif-com-gif-maker-11%20%281%29.gif" alt="" /> */}
                     </div>
                 </div>

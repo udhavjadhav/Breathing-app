@@ -4,14 +4,14 @@ import Box from '@mui/material/Box';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import './Songs.css'
-import Navbar from '../Navbar'
+import Navbar from '../Navbar/Navbar'
 import Divider from '@mui/material/Divider';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import SongsDetails from '../SongsDetails';
 import { Button } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from 'react-router-dom';
-import InnerNav from '../InnerNav';
+import InnerNav from '../InnerNav/InnerNav';
 export default function Music() {
 
     const { id } = useParams()

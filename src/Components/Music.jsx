@@ -5,11 +5,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import SongsDetails from './SongsDetails';
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar'
 import Divider from '@mui/material/Divider';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import { useNavigate } from 'react-router-dom';
-import InnerNav from './InnerNav';
+import InnerNav from '../Components/InnerNav/InnerNav'
 export default function Music() {
     const Navigate = useNavigate();
     const handleRelax = () => {

@@ -14,6 +14,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import { useNavigate } from 'react-router-dom';
+import './Navbar.css'
 
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -121,7 +122,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar color='secondary' position="static">
+      <AppBar id='appbar'color='secondary' position="static">
         <Toolbar>
         {/* <img style={{height:'15vh'}} src="./src/assets/adaptive-icon.png" alt="logo" /> */}
           <IconButton

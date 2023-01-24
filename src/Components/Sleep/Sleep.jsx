@@ -3,8 +3,8 @@ import SongsDetails from '../SongsDetails'
 // import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
 import Divider from '@mui/material/Divider';
-import Navbar from '../Navbar';
-import InnerNav from '../InnerNav';
+import Navbar from '../Navbar/Navbar'
+import InnerNav from '../InnerNav/InnerNav';
 import HomeInfo from '../HomeInfo';
 
 function Sleep() {
