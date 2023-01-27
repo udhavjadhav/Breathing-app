@@ -10,17 +10,21 @@ function Meditation() {
         <>
             <Navbar/>
             <InnerNav />
-            <div className="container-fluid text-center mt-5">
-                <h4 style={{ color: 'darkblue', fontWeight: 'bolder', marginLeft: '5vh' }} ><SelfImprovementIcon fontSize='large' /> Meditation</h4>
-        
 
+            <div className="meditation mt-5">
+                <h4 style={{ color: 'darkblue', fontWeight: 'bolder', marginLeft:'2vh'}} ><SelfImprovementIcon fontSize='medium' /> Meditation</h4>
                 <Divider sx={{ m: 2 }} color='secondary' />
-                <div className="row m-3 p-1">
+
+                <div className="wrapper" style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center'
+                }}>
                     {
                         SongsDetails.map((element, index) => {
                             return (
                                 <>
-                                   <HomeInfo key={index} element={element}/>
+                                    <HomeInfo key={index} element={element} />
                                 </>
                             )
                         })

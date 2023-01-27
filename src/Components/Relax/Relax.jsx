@@ -20,7 +20,7 @@ function Meditation() {
                     <h4 style={{ color: 'darkblue', fontWeight: 'bolder', marginLeft: '5vh' }} ><SpaIcon fontSize='medium' /> Relax</h4>
 
                 <Divider sx={{ m: 2 }} color='secondary' />
-                <div className="row m-3 p-1">
+                <div style={{display:'flex',justifyContent: 'center', flexWrap: 'wrap' }} className="row m-2 p-1">
                     {
                         SongsDetails.map((element, index) => {
                             return (

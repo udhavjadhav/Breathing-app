@@ -3,14 +3,9 @@ import './FirstPage.css'
 import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import Grid from '@mui/material/Grid';
-// import { useNavigate } from 'react-router-dom'
 function FirstPage() {
-    // const Navigate = useNavigate();
-    // const handleClick = () =>{
-    //     Navigate('/')
-    // }
+ 
     return (
-        <div className='sample'>
             <div className='container d-flex '>
                 <div className="icon">
                     <img className='logo' src="src/assets/logo.png" />
@@ -21,9 +16,7 @@ function FirstPage() {
                     <h6 id='text'>Mindful Breathing app</h6>
                 </div>
 
-            </div>
             <div className="container mt-5 w-50">
-
                 <Grid item>
                     <Link to='/signup'>
                         <Button id='btn' variant='contained' fullWidth >SIGN UP</Button>

@@ -32,13 +32,12 @@ export default function Music() {
         <>
             <Navbar/> 
             <InnerNav/> 
-        <div className='main'>
 
-            <div id="submain" className="container">
+            <div id="submain" >
                 {
                     filterSong.map((element, index) => {
                         return (
-                            <div className='sample'>
+                            <div key={index} className='sample'>
                                 <h3 style={{ color: 'darkblue', fontWeight: 'bolder' }} > <SelfImprovementIcon fontSize='large' /> {element.title}</h3>
                                 <Divider sx={{ m: 2}} color='primary' />
                                    
@@ -73,7 +72,6 @@ export default function Music() {
             </div>
 
             {/* </div> */}
-        </div>
         </>
     );
 }

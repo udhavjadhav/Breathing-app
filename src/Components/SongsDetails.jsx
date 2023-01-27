@@ -50,15 +50,15 @@ const SongsDetails = [
       {
         url: '../../assets/Mental-health/Mental-health.mp3',
       },
-      // {
-      //   url: '../../assets/Mental-health/Mental-health1.mp3',
-      // },
-      // {
-      //   url: '../../assets/Mental-health/Mental-health3.mp3',
-      // },
-      // {
-      //   url: '../../assets/Mental-health/Mental-health4.mp3',
-      // },
+      {
+        url: '../../assets/Mental-health/Mental-health1.mp3',
+      },
+      {
+        url: '../../assets/Mental-health/Mental-health3.mp3',
+      },
+      {
+        url: '../../assets/Mental-health/Mental-health4.mp3',
+      },
     ]
   },
   {

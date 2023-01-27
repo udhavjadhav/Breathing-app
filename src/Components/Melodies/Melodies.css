@@ -1,5 +1,35 @@
 #demo1{
     box-shadow: 0px 0px 20px 10px orange inset; 
 }
+#main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* text-align: center;   */
+    align-items: center;
+}
 
+#wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.aa{
+    display: flex;
+    /* background-color: brown; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
 

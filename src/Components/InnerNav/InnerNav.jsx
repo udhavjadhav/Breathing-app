@@ -5,7 +5,7 @@ import BedtimeIcon from '@mui/icons-material/Bedtime';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import SpaIcon from '@mui/icons-material/Spa';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import '../Navbar/Navbar.css'
+// import '../Navbar/Navbar.css'
 function InnerNav() {
     const Navigate = useNavigate();
     const handleClick = () =>{
@@ -28,22 +28,22 @@ function InnerNav() {
   return (
     <div id='appbar' className='container-fluid d-flex shadow pt-2 text-center mw-90'>
         <div className='container d-flex'>
-            <p style={{cursor:'pointer'}} onClick={handleClick}><HomeIcon sx={{text:'center'}} fontSize='medium'/><br /> Home</p>
+            <p style={{cursor:'pointer'}} onClick={handleClick}><HomeIcon sx={{text:'center'}} /><br /> Home</p>
         </div>
         <div className='container d-flex'>
-            <p style={{cursor:'pointer'}} onClick={handleMeditation} ><SelfImprovementIcon fontSize='medium'/><br /> Meditation</p>
+            <p style={{cursor:'pointer'}} onClick={handleMeditation} ><SelfImprovementIcon /><br /> Meditation</p>
         </div>  
         <div className='container d-flex '>
-            <p style={{cursor:'pointer'}} onClick={handleMelodies}>  <MusicNoteIcon fontSize='medium'/><br /> Melodies</p>
+            <p style={{cursor:'pointer'}} onClick={handleMelodies}>  <MusicNoteIcon /><br /> Melodies</p>
         </div>
         <div className='container d-flex'>
-            <p style={{cursor:'pointer'}} onClick={handleSleep}><BedtimeIcon fontSize='medium'/><br /> Sleep</p>
-        </div>
-        <div className='container d-flex '>
-            <p style={{cursor:'pointer'}} onClick={handleRelax}><SpaIcon fontSize='medium'/><br /> Relax</p>
+            <p style={{cursor:'pointer'}} onClick={handleSleep}><BedtimeIcon /><br /> Sleep</p>
         </div>
         {/* <div className='container d-flex '>
-            <p style={{cursor:'pointer'}} onClick={handleRelax}><AccountCircleIcon fontSize='medium'/><br /> Profile</p>
+            <p style={{cursor:'pointer'}} onClick={handleRelax}><SpaIcon /><br /> Relax</p>
+        </div> */}
+        {/* <div className='container d-flex '>
+            <p style={{cursor:'pointer'}} onClick={handleRelax}><AccountCircleIcon /><br /> Profile</p>
         </div> */}
     
     </div>
