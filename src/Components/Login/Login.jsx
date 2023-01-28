@@ -7,8 +7,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';  
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 const theme = createTheme();
 
@@ -21,16 +20,21 @@ export default function Login() {
             password: data.get('password'),
         });
     };
+    const Navigate = useNavigate()
+    const handleBack = () =>{
+        Navigate('/firstpage')
+    }
 
     return (
-        <div className="container p-5">
+        <div className="container">
 
             <ThemeProvider theme={theme}>
                 <Container component="main" maxWidth="xs" >
                     <CssBaseline />
+                    <ArrowBackIcon onClick={handleBack}  className='shadow' fontSize='large' style={{marginTop:'2.5vh', borderRadius:'45px', padding:'5px', cursor:'pointer'}}/>
                     <Box
                         sx={{
-                            marginTop: 2,
+                            marginTop: 0,
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
@@ -45,15 +49,15 @@ export default function Login() {
                             Welcome Back!
                         </Typography>
 
-                        <Button sx={{ m: 3, p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='contained' fullWidth ><img style={{ height: '30px', marginRight: '20px' }} src='src/assets/facebbok.png'></img> Continue with Facebook</Button>
+                        <Button sx={{ m: 2, p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='contained' fullWidth ><img style={{ height: '30px', marginRight: '20px' }} src='src/assets/facebbok.png'></img> Continue with Facebook</Button>
 
                         <Button sx={{ p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='outlined'  fullWidth><img style={{ height: '30px', marginRight: '15px' }} src='src/assets/google.png'></img> Continue with Google</Button>
 
-                        <Typography sx={{ m: 4, color: 'gray' }} component="h1" fontWeight='bolder'>
+                        <Typography sx={{ m: 2, color: 'gray' }} component="h1" fontWeight='bolder'>
                             OR LOG IN WITH EMAIL
                         </Typography>
 
-                        <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+                        <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 0 }}>
                             <Grid container spacing={2}>
 
                                 <Grid item xs={12}>
@@ -84,7 +88,7 @@ export default function Login() {
                                 type="submit"
                                 fullWidth
                                 variant="contained"
-                                sx={{ mt: 4, mb: 2, p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }}
+                                sx={{ mt: 3, mb: 2, p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }}
                             >
                                 LOG IN
                             </Button>
@@ -92,8 +96,9 @@ export default function Login() {
                                 <Link to={'#'} >
                                 <p className='text-center'>{"Forget Password"}</p>
                                 </Link>
+                               <span  style={{marginLeft:'12vh'}}>New user? </span>
                                 <Link to={'/signup'} variant="body2">
-                                <p className='text-center'>New user? {"Sign Up"}</p> 
+                                <span style={{fontWeight:'bolder'}}>{" SIGN UP"}</span> 
                                 </Link>
                             </Grid>
                         </Box>

@@ -33,12 +33,12 @@ function HomePage() {
                     <h1 className='font-weight-bolder mb-3'>{wish + Name}</h1>
                     <Button variant='outlined'>{date}</Button>
                     <Button sx={{ m: 2 }} variant='outlined'>{time}</Button><br />
-                    <img style={{ height: '35vh', display: 'flex' }} src="https://media1.giphy.com/media/XyakWW6WwplIPSHfuR/giphy.gif" alt="" />
+                    <img style={{ height: '35vh', display: 'flex' }} src="https://media1.giphy.com/media/XyakWW6WwplIPSHfuR/giphy.gif" alt="loading" />
                 </div>
             </div>
 
             <div className="demo mt-5">
-                <h4 style={{ color: 'darkblue', fontWeight: 'bolder',marginLeft:'2vh'}} ><SelfImprovementIcon fontSize='large' /> Meditation</h4>
+                <h4 style={{ color: 'darkblue', fontWeight: 'bolder',}} ><SelfImprovementIcon fontSize='large' /> Meditation</h4>
                 <Divider sx={{ m: 2 }} color='secondary' />
 
                 <div className="demo2" style={{

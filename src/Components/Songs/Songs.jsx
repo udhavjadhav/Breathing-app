@@ -33,7 +33,7 @@ export default function Music() {
             <Navbar/> 
             <InnerNav/> 
 
-            <div id="submain" >
+            <div id="wrapper" >
                 {
                     filterSong.map((element, index) => {
                         return (

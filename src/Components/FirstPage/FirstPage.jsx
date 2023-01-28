@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 function FirstPage() {
  
     return (
-            <div className='container d-flex '>
+            <div className='d-flex' id='first'>
                 <div className="icon">
                     <img className='logo' src="src/assets/logo.png" />
                 </div>
@@ -14,20 +14,21 @@ function FirstPage() {
                     <img className='welcomeimg' src="src/assets/relax5.webp" alt="" />
                     <h1 id='wish'>Breathings</h1><br />
                     <h6 id='text'>Mindful Breathing app</h6>
-                </div>
+               </div>
 
-            <div className="container mt-5 w-50">
+            {/* <div className="container mt-2"> */}
                 <Grid item>
                     <Link to='/signup'>
-                        <Button id='btn' variant='contained' fullWidth >SIGN UP</Button>
+                        <Button id='signup' variant='contained' >SIGN UP</Button>
+                        {/* <button id='btn' className='btn btn-outline-primary'>SIGN UP</button> */}
                     </Link>
+                    Already have an account? 
                     <Link to={'/login'} variant="body2">
-                        <p className='text-center mt-2'>Already have account? {" LOGIN"}</p>
+                    <span style={{fontWeight:'bolder'}}>{" LOG IN"}</span>
                     </Link>
                 </Grid>
-            </div>
-        </div>
-
+                </div>
+            // </div>
     )
 }
 
