@@ -24,7 +24,7 @@ export default function SignUp() {
         }
         console.log(ActualData);
 
-        axios.post('http://localhost:2000/signup', { body: JSON.stringify(ActualData) }).then(res=>console.log(res));
+       axios.post('http://localhost:2000/signup', { body: JSON.stringify(ActualData) }).then(res=>console.log(res));
     };
     const Navigate = useNavigate()
     const handleBack = () =>{
