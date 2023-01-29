@@ -9,12 +9,13 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
+// import { useState } from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-const theme = createTheme();
 
+const theme = createTheme();
+// const [error, setError] = useState("");
 export default function SignUp() {
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         const ActualData = {
@@ -24,7 +25,26 @@ export default function SignUp() {
         }
         console.log(ActualData);
 
-       axios.post('http://localhost:2000/signup', { body: JSON.stringify(ActualData) }).then(res=>console.log(res));
+    const options = {
+        url: 'http://localhost:2000/signup',
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json;charset=UTF-8'
+        },
+        data: ActualData
+      };
+      
+      const response = await axios(options)
+      console.log(response);
+
+      if(response.status === 200){
+        window.localStorage.setItem('token', response.data);
+            Navigate('/login');
+        }
+        // else{
+        //     setError("Email already exist, please try using another email");
+        // }
     };
     const Navigate = useNavigate()
     const handleBack = () =>{
@@ -56,7 +76,7 @@ export default function SignUp() {
 
                         <Button sx={{ m: 1.5, p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='contained' fullWidth ><img style={{ height: '30px', marginRight: '20px' }} src='src/assets/facebbok.png'></img> Continue with Facebook</Button>
 
-                        <Button sx={{ p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='outlined' borderRadius='16px' fullWidth><img style={{ height: '30px', marginRight: '15px' }} src='src/assets/google.png'></img> Continue with Google</Button>
+                        <Button sx={{ p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='outlined' fullWidth><img style={{ height: '30px', marginRight: '15px' }} src='src/assets/google.png'></img> Continue with Google</Button>
 
                         <Typography sx={{ m: 2, color: 'gray' }} component="h1" fontWeight='bolder'>
                             OR LOG IN WITH EMAIL
@@ -108,6 +128,7 @@ export default function SignUp() {
                             >
                                 GET STARTED
                             </Button>
+                            {/* <p style={{color:'red', textAlign:'center'}}>{error}</p> */}
                             <Grid item>
                                 <span style={{marginLeft:'5vh'}}>Already have an account? </span>
                                 <Link to={'/login'} variant="body2">

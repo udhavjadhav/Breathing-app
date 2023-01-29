@@ -9,16 +9,42 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';  
 import { Link, useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import axios from 'axios';
 const theme = createTheme();
 
 export default function Login() {
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
-        console.log({
+        const payload = ({
             email: data.get('email'),
             password: data.get('password'),
         });
+
+        console.log(payload);
+
+        const options = {
+            url: 'http://localhost:2000/login',
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json;charset=UTF-8'
+            },
+            data: payload
+          };
+          
+          const response = await axios(options);
+          console.log(response.data);
+          if(response.status === 200){
+            // User auth success
+            console.log('user logged in successfully');
+            window.localStorage.setItem('token', response.data);
+            Navigate('/');
+          }
+          else{
+            // Failed
+            console.log('login failed')
+          }
     };
     const Navigate = useNavigate()
     const handleBack = () =>{

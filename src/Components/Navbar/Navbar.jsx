@@ -45,6 +45,11 @@ export default function PrimarySearchAppBar() {
     Navigate('/')
   }
 
+  const handleMenuLogout = () => {
+    window.localStorage.removeItem('token');
+    Navigate('/firstpage');
+  }
+
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -65,6 +70,7 @@ export default function PrimarySearchAppBar() {
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
       <MenuItem onClick={handleMenuClose}>Settings</MenuItem>
+      <MenuItem onClick={handleMenuLogout}>Logout</MenuItem>
     </Menu>
   );
 
