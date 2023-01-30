@@ -11,7 +11,6 @@ import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import './Melodies.css'
-// import song from '../../../public/assets/Melodies/Birds.mp3'
 const Melodies = () => {
     const [condition, setCondition] = useState([])
     function valuetext(value) {
@@ -23,7 +22,7 @@ const Melodies = () => {
             <Navbar />
             <InnerNav />
 
-            <h4 className='text-center m-3' style={{ color: 'darkblue', fontWeight: 'bolder'}}>Melodies<MusicNoteIcon fontSize='medium' /></h4>
+            <h4 id='text1' className='text-center' style={{ color: 'darkblue', fontWeight: 'bolder'}}>Melodies<MusicNoteIcon fontSize='medium' /></h4>
             <div className='container '>
                 <div className="row d-flex flex-wrap g-1">
                     {
@@ -54,7 +53,7 @@ const Melodies = () => {
                 </div>
                 
 
-                {/* <div className="container mt-5">
+                <div className="container mt-3">
                     <Accordion >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -66,7 +65,7 @@ const Melodies = () => {
                         <AccordionDetails>
                             <Typography>
                                 <div className="container d-flex w-50">
-                                    <Box sx={{ width: 500 }}>
+                                    <Box sx={{ width: 500, textAlign: 'center' }}>
                                         <span>Sound 1</span>
                                         <Slider
                                             aria-label="Temperature"
@@ -116,7 +115,7 @@ const Melodies = () => {
                         </AccordionDetails>
 
                     </Accordion>
-                </div> */}
+                </div> 
             </div>
         </>
     )

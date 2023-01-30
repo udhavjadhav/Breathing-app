@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 function FirstPage() {
  
     return (
+        <div className='firstpage'>
             <div className='d-flex' id='first'>
                 <div className="icon">
                     <img className='logo' src="src/assets/logo.png" />
@@ -28,7 +29,7 @@ function FirstPage() {
                     </Link>
                 </Grid>
                 </div>
-            // </div>
+            </div>
     )
 }
 

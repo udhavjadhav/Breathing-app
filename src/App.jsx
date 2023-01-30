@@ -11,6 +11,7 @@ import SignUp from './Components/SignUp/SignUp'
 import Login from './Components/Login/Login'
 import Welcome from './Components/Welcome/Welcome'
 import FirstPage from './Components/FirstPage/FirstPage'
+import SleepSongs from './Components/Sleep/SleepSongs'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/' element={<HomePage/>}/>
           <Route path='/music' element={<Music/>}/>
           <Route path='/songs/:id' element={<Songs/>}/>
+          <Route path='/sleepsongs/:id' element={<SleepSongs/>}/>
           <Route path='/meditation' element={<Meditation/>}/>
           <Route path='/relax' element={<Relax/>}/>
           <Route path='/melodies' element={<Melodies/>}/>

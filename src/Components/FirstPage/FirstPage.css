@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing: border-box;   
 }
+.firstpage{
+    
+    background-color:#B4CDE6;
+    height: 100vh;
+}
 #first{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color:#B4CDE6;
-        height: 100vh;
         max-height: 92vh;
         
     } 

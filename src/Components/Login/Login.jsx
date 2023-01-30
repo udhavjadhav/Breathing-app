@@ -10,10 +10,25 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link, useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import axios from 'axios';
+import { useState } from 'react';
+// import { validEmail, validPassword } from './Regex';
+
 const theme = createTheme();
 
 export default function Login() {
+    // const [email, setEmail] = useState('');
+    // const [password, setPassword] = useState('');
+    // const [emailErr, setEmailErr] = useState(false);
+    // const [pwdError, setPwdError] = useState(false);
     const handleSubmit = async (event) => {
+
+        // if (!validEmail.test(email)) {
+        //     setEmailErr(true);
+        // }
+        // if (!validPassword.test(password)) {
+        //     setPwdError(true);
+        // }
+        
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         const payload = ({
@@ -53,7 +68,6 @@ export default function Login() {
 
     return (
         <div className="container">
-
             <ThemeProvider theme={theme}>
                 <Container component="main" maxWidth="xs" >
                     <CssBaseline />
@@ -95,6 +109,7 @@ export default function Login() {
                                         name="email"
                                         autoComplete="email"
                                     />
+                                {/* {emailErr && <p style={{ color: 'red' }}>Required valid email address!</p>} */}
                                 </Grid>
                                 <Grid item xs={12}>
                                     <TextField
@@ -107,6 +122,7 @@ export default function Login() {
                                         id="password"
                                         autoComplete="new-password"
                                     />
+                                {/* {pwdError && <p style={{ color: 'red' }}>Required valid password!</p>} */}
                                 </Grid>
 
                             </Grid>
@@ -118,6 +134,7 @@ export default function Login() {
                             >
                                 LOG IN
                             </Button>
+                          
                             <Grid item>
                                 <Link to={'#'} >
                                 <p className='text-center'>{"Forget Password"}</p>

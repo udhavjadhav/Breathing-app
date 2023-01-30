@@ -13,7 +13,7 @@ app.use(express.json())
 const path = require('path');
 const db = new sqlite.Database(path.join(__dirname, 'Data.db'));
 
-app.post("/signup", (req, res) => {
+ app.post("/signup", (req,res) => {
     const item = req.body
     console.log(item);
     const ID = crypto.randomBytes(5).toString('hex')
@@ -56,7 +56,6 @@ app.post("/login", async(req, res) => {
             });
         }
     })
-    // const port = 2000
 const port = process.env.PORT;
 app.listen(port, () => {
     console.log(`server listening on ${port} :`)

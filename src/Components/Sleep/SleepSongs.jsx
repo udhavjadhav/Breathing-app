@@ -3,19 +3,18 @@ import { useParams } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import './Songs.css'
 import Navbar from '../Navbar/Navbar'
-import Divider from '@mui/material/Divider';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
-import SongsDetails from '../SongsDetails';
+import SleepDetails from './SleepDetails';
 import { Button } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from 'react-router-dom';
 import InnerNav from '../InnerNav/InnerNav';
-export default function Music() {
+import './SleepSongs.css'
+export default function SleepSongs() {
 
     const { id } = useParams()
-    const filterSong = SongsDetails.filter((song) => {
+    const filterSong = SleepDetails.filter((song) => {
         if (song.id == id) {
             return song
         }
@@ -48,7 +47,7 @@ export default function Music() {
                                                     Live From Space
                                                 </Typography>
                                                 <Typography variant="subtitle1" color="text.secondary" component="div">
-                                                    Mr.Udhav Jadhav
+                                                    {element.name}
                                                 </Typography>
                                             </CardContent>
                                             {

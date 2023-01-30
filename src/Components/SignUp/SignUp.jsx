@@ -9,13 +9,31 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+// import {ValidName, validEmail, validPassword } from '../Login/Regex';
 // import { useState } from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
+
 const theme = createTheme();
-// const [error, setError] = useState("");
 export default function SignUp() {
+    // const [email, setEmail] = useState('');
+    // const [password, setPassword] = useState('');
+    // const [emailErr, setEmailErr] = useState(false);
+    // const [pwdError, setPwdError] = useState(false);
+    // const [nameError, setNameError] = useState('');
+    // const [error, setError] = useState("");
     const handleSubmit = async (event) => {
+
+        // if(!ValidName.test(name) ){
+        //     setNameError('Required valid name!');
+        // }
+        // if (!validEmail.test(email)) {
+        //     setEmailErr(true);
+        // }
+        // if (!validPassword.test(password)) {
+        //     setPwdError(true);
+        // }
+
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         const ActualData = {
@@ -42,9 +60,6 @@ export default function SignUp() {
         window.localStorage.setItem('token', response.data);
             Navigate('/login');
         }
-        // else{
-        //     setError("Email already exist, please try using another email");
-        // }
     };
     const Navigate = useNavigate()
     const handleBack = () =>{
@@ -95,6 +110,7 @@ export default function SignUp() {
                                         autoFocus
 
                                     />
+                                    {/* <p style={{ color: 'red' }}>{nameError}</p> */}
                                 </Grid>
                                 <Grid item xs={12}>
                                     <TextField
@@ -105,6 +121,7 @@ export default function SignUp() {
                                         name="email"
                                         autoComplete="email"
                                     />
+                                    {/* {emailErr && <p style={{ color: 'red' }}>Required valid email address!</p>} */}
                                 </Grid>
                                 <Grid item xs={12}>
                                     <TextField
@@ -117,6 +134,9 @@ export default function SignUp() {
                                         id="password"
                                         autoComplete="new-password"
                                     />
+                                {/* <p>Password must contains, (uppercase, lowercase, special characters, numbers!)</p>
+                                <p>Length of password must be atleast 8 character</p> */}
+                                {/* {pwdError && <p style={{ color: 'red' }}>Required valid password!</p>} */}
                                 </Grid>
 
                             </Grid>
