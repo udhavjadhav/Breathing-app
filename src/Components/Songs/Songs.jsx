@@ -24,14 +24,14 @@ export default function Music() {
     const filt = filterSong[0].urllist
 
     const Navigate = useNavigate();
-    const handleClick = () =>{
+    const handleClick = () => {
         Navigate('/')
     }
 
     return (
         <>
-            <Navbar/> 
-            <InnerNav/> 
+            <Navbar />
+            <InnerNav />
 
             <div id="wrapper" >
                 {
@@ -39,31 +39,33 @@ export default function Music() {
                         return (
                             <div key={index} className='sample'>
                                 <h3 style={{ color: 'darkblue', fontWeight: 'bolder' }} > <SelfImprovementIcon fontSize='large' /> {element.title}</h3>
-                                   
-                                   <img className='image' src={element.image} alt="loading" />
-                                
-                                        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                                            <CardContent sx={{ flex: '1 0 auto' }}>
-                                                <Typography component="div" variant="h5">
-                                                    Live From Space
-                                                </Typography>
-                                                <Typography variant="subtitle1" color="text.secondary" component="div">
-                                                    Mr.Udhav Jadhav
-                                                </Typography>
-                                            </CardContent>
-                                            {
-                                                filt?.map((song, index) => {
-                                                    const music = song.url
-                                                    return <div key={index} className='container m-2 p-2'>
-                                                        <audio key={index} controls src={music}></audio>
-                                                    </div>
-                                                })
-                                            }
-                                            <Button variant='outlined' onClick={handleClick} sx={{width:'30%', mt:2}} startIcon={<ArrowBackIcon/>} >Back</Button>
-                                        </Box>
-                                        
-                                </div>
-                       
+
+                                <img className='image' src={element.image} alt="loading" />
+
+                                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                                    <CardContent sx={{ flex: '1 0 auto' }}>
+                                        <Typography component="div" variant="h5">
+                                            Live From Space
+                                        </Typography>
+                                        <Typography variant="subtitle1" color="text.secondary" component="div">
+                                            Mr.Udhav Jadhav
+                                        </Typography>
+                                    </CardContent>
+                                    {
+                                        filt?.map((song, index) => {
+                                            const music = song.url
+                                            return <div key={index} className='container m-2 p-2'>
+                                                <audio key={index} controls src={music}></audio>
+                                            </div>
+                                        })
+                                    }
+                                    <ArrowBackIcon onClick={handleClick} className='shadow' fontSize='large' style={{ marginTop: '2.5vh', borderRadius: '45px', padding: '5px', cursor: 'pointer' }} />
+
+                                    {/* <Button variant='outlined' onClick={handleClick} sx={{width:'30%', mt:2}} startIcon={<ArrowBackIcon/>} >Back</Button> */}
+                                </Box>
+
+                            </div>
+
                         )
 
                     })

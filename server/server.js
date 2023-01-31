@@ -10,6 +10,7 @@ dotenv.config()
 const app = express()
 app.use(cors());
 app.use(express.json())
+
 const path = require('path');
 const db = new sqlite.Database(path.join(__dirname, 'Data.db'));
 

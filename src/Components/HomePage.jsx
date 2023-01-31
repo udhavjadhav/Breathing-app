@@ -43,12 +43,12 @@ function HomePage() {
     const Name = "Dear";
 
     return (
-        <>
+        <div >
             <Navbar />
             <InnerNav />
-
-            <div className="wrapper d-inline">
-                <div className="sample mt-4">
+         
+            <div className="wrapper" style={{backgroundColor: '#F0F8FF', padding:'2vh'}}>
+                <div className="sample mt-3">
                     <h1 style={{marginTop:'10px',marginBottom:'20px', fontStyle: 'italic'}} className="d-flex flex-wrap">{wish + Name}</h1>
                     <Button variant='outlined'>{date}</Button>
                     <Button sx={{ m: 2 }} variant='outlined'>{time}</Button><br />
@@ -56,11 +56,12 @@ function HomePage() {
                 </div>
             </div>
 
-            <div className="demo mt-5">
+            <div className="icons mt-5">
                 <h4 style={{ color: 'darkblue', fontWeight: 'bolder',marginLeft:'2vh'}} ><SelfImprovementIcon fontSize='large' /> Meditation</h4>
                 <Divider sx={{ m: 2 }} color='secondary' />
+                </div>
 
-                <div className="demo2" style={{
+                <div className="cards" style={{
                     display: 'flex',
                     flexWrap: 'wrap',
                     justifyContent: 'center'
@@ -75,8 +76,8 @@ function HomePage() {
                         })
                     }
                 </div>
-            </div>
-        </>
+            
+        </div>
 
     )
 }

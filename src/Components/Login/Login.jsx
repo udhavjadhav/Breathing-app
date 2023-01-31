@@ -13,13 +13,32 @@ import axios from 'axios';
 import { useState } from 'react';
 // import { validEmail, validPassword } from './Regex';
 
+import Stack from '@mui/material/Stack';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={10} ref={ref} variant="filled" {...props} />;
+  });
+
+
 const theme = createTheme();
 
+    
 export default function Login() {
     // const [email, setEmail] = useState('');
     // const [password, setPassword] = useState('');
     // const [emailErr, setEmailErr] = useState(false);
     // const [pwdError, setPwdError] = useState(false);
+    const [open, setOpen] = React.useState(false);
+      const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+          return;
+        }
+    
+        setOpen(false);
+      };
+
     const handleSubmit = async (event) => {
 
         // if (!validEmail.test(email)) {
@@ -35,8 +54,8 @@ export default function Login() {
             email: data.get('email'),
             password: data.get('password'),
         });
-
-        console.log(payload);
+        setOpen(true);
+        // console.log(payload);
 
         const options = {
             url: 'http://localhost:2000/login',
@@ -54,7 +73,7 @@ export default function Login() {
             // User auth success
             console.log('user logged in successfully');
             window.localStorage.setItem('token', response.data);
-            Navigate('/');
+            Navigate('/welcome');
           }
           else{
             // Failed
@@ -67,6 +86,18 @@ export default function Login() {
     }
 
     return (
+        <>
+        <Stack spacing={2} sx={{ width: '100%' }}>
+                <Snackbar anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "center"
+                }} open={open} autoHideDuration={3000} onClose={handleClose}>
+                    <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+                        Please Enter Valid Details!
+                    </Alert>
+                </Snackbar>
+            </Stack>
+        
         <div className="container">
             <ThemeProvider theme={theme}>
                 <Container component="main" maxWidth="xs" >
@@ -149,5 +180,6 @@ export default function Login() {
                 </Container>
             </ThemeProvider>
         </div>
+        </>
     );
 }

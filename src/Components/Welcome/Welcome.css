@@ -2,6 +2,10 @@
     margin:0;
     padding: 0;
 }
+.welcome{
+    background-color: lightblue;
+    height: 100vh;
+}
 
 .logo{
     height: 10vh;
@@ -15,20 +19,17 @@
     height: 40vh;
     width: 40vh;
     border-radius: 50%;
-    margin: 4vh ;
+    margin: 3vh ;
 
 }
-#btn{
-    padding: 1.5vh;
-    font-weight: bolder;
-    font-size: 18px;
-    border-radius: 45px;
-    margin-bottom: 1vh;
-}
+
 #wish{
     font-weight: bolder;
 }
-#text{
-    line-height: 2.0;
+
+.para{
+    line-height: 1.5;
+    font-style: italic ;
+    
 }
 

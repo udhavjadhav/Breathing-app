@@ -11,7 +11,8 @@ import SignUp from './Components/SignUp/SignUp'
 import Login from './Components/Login/Login'
 import Welcome from './Components/Welcome/Welcome'
 import FirstPage from './Components/FirstPage/FirstPage'
-import SleepSongs from './Components/Sleep/SleepSongs'
+import SleepSongs from './Components/Sleep/SleepSongs';
+import Notification from './Components/Notification'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path='/relax' element={<Relax/>}/>
           <Route path='/melodies' element={<Melodies/>}/>
           <Route path='/sleep' element={<Sleep/>}/>
+          <Route path='/notification' element={<Notification/>}/>
         </Routes>
       </Router>
     </div>

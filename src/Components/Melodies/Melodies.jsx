@@ -19,12 +19,14 @@ const Melodies = () => {
     console.log(condition)
     return (
         <>
-            <Navbar />
+         <Navbar />
             <InnerNav />
 
-            <h4 id='text1' className='text-center' style={{ color: 'darkblue', fontWeight: 'bolder'}}>Melodies<MusicNoteIcon fontSize='medium' /></h4>
-            <div className='container '>
+        
+        <div className='' id='melodies'>
+            <div className='container'>
                 <div className="row d-flex flex-wrap g-1">
+            <h4 id='text1' className='text-center' style={{ color: 'darkblue', fontWeight: 'bolder'}}>Melodies<MusicNoteIcon fontSize='medium' /></h4>
                     {
                         MelodiesDetails.map((element, index) => {
                             const num = index + 1
@@ -51,16 +53,13 @@ const Melodies = () => {
                         })
                     }
                 </div>
-                
-
-                <div className="container mt-3">
-                    <Accordion >
+                    <Accordion sx={{mt:28}}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <h4 style={{ fontWeight: 'bolder' }} className='container text-center'>Mixer  </h4>
+                            <h4 style={{ fontWeight: 'bolder' }} className='container text-center'>Mixer </h4>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -83,16 +82,16 @@ const Melodies = () => {
                                             color="primary"
                                         />
                                     </Box>
-                                    <Box sx={{ width: 500, textAlign: 'center' }}>
-                                        <span>Sound 3</span>
-                                        <Slider
-                                            aria-label="Temperature"
-                                            defaultValue={30}
-                                            getAriaValueText={valuetext}
-                                            color="primary"
-                                        />
-                                    </Box>
-                                    <Box sx={{ width: 500, textAlign: 'center' }}>
+                                        {/* <Box sx={{ width: 500, textAlign: 'center' }}>
+                                            <span>Sound 3</span>
+                                            <Slider
+                                                aria-label="Temperature"
+                                                defaultValue={30}
+                                                getAriaValueText={valuetext}
+                                                color="primary"
+                                            />
+                                        </Box> */}
+                                    {/* <Box sx={{ width: 500, textAlign: 'center' }}>
                                         <span>Sound 4</span>
                                         <Slider
                                             aria-label="Temperature"
@@ -100,8 +99,8 @@ const Melodies = () => {
                                             getAriaValueText={valuetext}
                                             color="primary"
                                         />
-                                    </Box>
-                                    <Box sx={{ width: 500, textAlign: 'center' }}>
+                                    </Box> */}
+                                    {/* <Box sx={{ width: 500, textAlign: 'center' }}>
                                         <span>Sound 5</span>
                                         <Slider
                                             aria-label="Temperature"
@@ -109,7 +108,7 @@ const Melodies = () => {
                                             getAriaValueText={valuetext}
                                             color="primary"
                                         />
-                                    </Box>
+                                    </Box> */}
                                 </div>
                             </Typography>
                         </AccordionDetails>
