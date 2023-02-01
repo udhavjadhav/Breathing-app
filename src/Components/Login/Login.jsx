@@ -120,7 +120,7 @@ export default function Login() {
                             Welcome Back!
                         </Typography>
 
-                        <Button sx={{ m: 2, p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='contained' fullWidth ><img style={{ height: '30px', marginRight: '20px' }} src='src/assets/facebbok.png'></img> Continue with Facebook</Button>
+                       <Button sx={{ m: 2, p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='contained' fullWidth ><img style={{ height: '30px', marginRight: '15px' }} src='src/assets/facebbok.png'></img> Continue with Facebook</Button>
 
                         <Button sx={{ p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='outlined'  fullWidth><img style={{ height: '30px', marginRight: '15px' }} src='src/assets/google.png'></img> Continue with Google</Button>
 

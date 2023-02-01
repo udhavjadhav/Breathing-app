@@ -16,9 +16,9 @@ const SongsDetails = [
       {
         url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
       },
-      {
-        url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-      },
+      // {
+      //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+      // },
     ]
   },
   {
@@ -36,9 +36,9 @@ const SongsDetails = [
       {
         url: '../../assets/Relaxation/starlight.mp3',
       },
-      {
-        url: '../../assets/Relaxation/soothing.mp3',
-      },
+      // {
+      //   url: '../../assets/Relaxation/soothing.mp3',
+      // },
     ]
   },
   {
@@ -56,9 +56,9 @@ const SongsDetails = [
       {
         url: '../../assets/Mental-health/Mental-health3.mp3',
       },
-      {
-        url: '../../assets/Mental-health/Mental-health4.mp3',
-      },
+      // {
+      //   url: '../../assets/Mental-health/Mental-health4.mp3',
+      // },
     ]
   },
   {
@@ -76,9 +76,9 @@ const SongsDetails = [
       {
         url: '../../assets/Nature-sound/Nature3.mp3',
       },
-      {
-        url: '../../assets/Nature-sound/Nature4.mp3',
-      },
+      // {
+      //   url: '../../assets/Nature-sound/Nature4.mp3',
+      // },
     ]
   },
   {
@@ -96,9 +96,9 @@ const SongsDetails = [
       {
         url: '../../assets/Heaven/Heaven3.mp3',
       },
-      {
-        url: '../../assets/Heaven/Heaven4.mp3',
-      },
+      // {
+      //   url: '../../assets/Heaven/Heaven4.mp3',
+      // },
     ]
   },
   {
@@ -116,9 +116,9 @@ const SongsDetails = [
       {
         url: '../../assets/Breathing/Breathing3.mp3',
       },
-      {
-        url: '../../assets/Breathing/Breathing4.mp3',
-      },
+      // {
+      //   url: '../../assets/Breathing/Breathing4.mp3',
+      // },
     ]
   },
   {
@@ -136,9 +136,9 @@ const SongsDetails = [
       {
         url: '../../assets/Sky-walk/Sky-walk3.mp3',
       },
-      {
-        url: '../../assets/Sky-walk/Sky-walk4.mp3',
-      },
+      // {
+      //   url: '../../assets/Sky-walk/Sky-walk4.mp3',
+      // },
     ]
   },
   {
@@ -156,9 +156,9 @@ const SongsDetails = [
       {
         url: '../../assets/Mountains/Mountain1.mp3',
       },
-      {
-        url: '../../assets/Mountains/Mountain1.mp3',
-      },
+      // {
+      //   url: '../../assets/Mountains/Mountain1.mp3',
+      // },
     ]
   },
   {
@@ -176,9 +176,9 @@ const SongsDetails = [
       {
         url: '../../assets/Mountains/Mountain1.mp3',
       },
-      {
-        url: '../../assets/Mountains/Mountain1.mp3',
-      },
+      // {
+      //   url: '../../assets/Mountains/Mountain1.mp3',
+      // },
     ]
 },
 {
@@ -196,9 +196,9 @@ const SongsDetails = [
     {
       url: '../../assets/Mountains/Mountain1.mp3',
     },
-    {
-      url: '../../assets/Mountains/Mountain1.mp3',
-    },
+    // {
+    //   url: '../../assets/Mountains/Mountain1.mp3',
+    // },
   ]
 },
 {
@@ -216,9 +216,9 @@ const SongsDetails = [
     {
       url: '../../assets/Mountains/Mountain1.mp3',
     },
-    {
-      url: '../../assets/Mountains/Mountain1.mp3',
-    },
+    // {
+    //   url: '../../assets/Mountains/Mountain1.mp3',
+    // },
   ]
 },
 {
@@ -236,9 +236,9 @@ const SongsDetails = [
     {
       url: '../../assets/Mountains/Mountain1.mp3',
     },
-    {
-      url: '../../assets/Mountains/Mountain1.mp3',
-    },
+    // {
+    //   url: '../../assets/Mountains/Mountain1.mp3',
+    // },
   ]
 },
 ]

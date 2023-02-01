@@ -12,6 +12,11 @@ import { Button } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from 'react-router-dom';
 import InnerNav from '../InnerNav/InnerNav';
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 export default function Music() {
 
     const { id } = useParams()
@@ -33,11 +38,11 @@ export default function Music() {
             <Navbar />
             <InnerNav />
 
-            <div id="wrapper" >
+            <div className="parent">
                 {
                     filterSong.map((element, index) => {
                         return (
-                            <div key={index} className='sample'>
+                            <div key={index} className='sample mt-2'>
                                 <h3 style={{ color: 'darkblue', fontWeight: 'bolder' }} > <SelfImprovementIcon fontSize='large' /> {element.title}</h3>
 
                                 <img className='image' src={element.image} alt="loading" />
@@ -59,10 +64,16 @@ export default function Music() {
                                             </div>
                                         })
                                     }
-                                    <ArrowBackIcon onClick={handleClick} className='shadow' fontSize='large' style={{ marginTop: '2.5vh', borderRadius: '45px', padding: '5px', cursor: 'pointer' }} />
 
-                                    {/* <Button variant='outlined' onClick={handleClick} sx={{width:'30%', mt:2}} startIcon={<ArrowBackIcon/>} >Back</Button> */}
                                 </Box>
+                                <div className='mt-4'>
+                                        {/* <ArrowBackIcon onClick={handleClick} className='shadow' fontSize='large' style={{ marginRight: '5vh',borderRadius: '45px', padding: '5px', cursor: 'pointer' }} /> */}
+                                        <FavoriteBorderIcon fontSize='large' style={{marginRight: '5vh'}} />
+                                        <PlaylistAddIcon fontSize='large' style={{ marginRight: '5vh'}}/>
+                                        <AccessAlarmIcon fontSize='large' style={{ marginRight: '5vh'}}/>
+                                        <MoreVertIcon fontSize='large' />
+
+                                    </div>
 
                             </div>
 

@@ -102,7 +102,7 @@ export default function PrimarySearchAppBar() {
                     vertical: "right",
                     horizontal: "right"
                 }} open={open} autoHideDuration={5000} onClose={handleClose}>
-                    <Alert onClose={handleClose} severity="secondary" sx={{ width: '100%' }}>
+                    <Alert onClose={handleClose} severity="secondary" sx={{ width: '100%', cursor:'pointer' }}>
                         Meditation class is live! Click Here to Join!
                     </Alert>
                 </Snackbar>

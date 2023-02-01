@@ -14,9 +14,9 @@ const SleepDetails = [
         {
           url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
         },
-        {
-          url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-        },
+        // {
+        //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+        // },
       ]
     },
   
@@ -36,9 +36,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       },
       {
@@ -56,9 +56,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       },
       {
@@ -76,9 +76,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       },
       {
@@ -96,9 +96,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       },
       {
@@ -116,9 +116,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       },
       {
@@ -136,9 +136,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       },
       {
@@ -156,9 +156,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       },
       {
@@ -176,9 +176,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       },
       {
@@ -196,9 +196,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       },
       {
@@ -216,9 +216,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       },
       {
@@ -236,9 +236,9 @@ const SleepDetails = [
           {
             url: '../../assets/Daily-Motivation/Daily-Motivation3.mp3',
           },
-          {
-            url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
-          },
+          // {
+          //   url: '../../assets/Daily-Motivation/Daily-Motivation4.mp3',
+          // },
         ]
       }
 

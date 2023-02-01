@@ -19,41 +19,40 @@ const Melodies = () => {
     console.log(condition)
     return (
         <>
-         <Navbar />
+            <Navbar />
             <InnerNav />
 
-        
-        <div className='' id='melodies'>
-            <div className='container'>
-                <div className="row d-flex flex-wrap g-1">
-            <h4 id='text1' className='text-center' style={{ color: 'darkblue', fontWeight: 'bolder'}}>Melodies<MusicNoteIcon fontSize='medium' /></h4>
-                    {
-                        MelodiesDetails.map((element, index) => {
-                            const num = index + 1
+            <div className='' id='melodies'>
+                <div className='container'>
+                    <div className="row d-flex flex-wrap g-1">
+                        <h4 id='text1' className='text-center' style={{ color: 'darkblue', fontWeight: 'bolder' }}>Melodies<MusicNoteIcon fontSize='medium' /></h4>
+                        {
+                            MelodiesDetails.map((element, index) => {
+                                const num = index + 1
 
-                            return (
-                                <>
-                                    <div id={num == condition ? 'demo1' : ''} onClick={() => {
-                                        const audio = new Audio(element.song);
-                                        audio.play();
-                                        setCondition(element.id)
-                                    }}
-                                        key={index} style={{
-                                            height: '16vh', width: '16vh', borderRadius: '50%',
-                                            cursor: 'pointer'
-                                        }} className='view d-flex flex-wrap border m-4 p-5 '>
+                                return (
+                                    <>
+                                        <div id={num == condition ? 'demo1' : ''} onClick={() => {
+                                            const audio = new Audio(element.song);
+                                            audio.play();
+                                            setCondition(element.id)
+                                        }}
+                                            key={index} style={{
+                                                height: '16vh', width: '16vh', borderRadius: '50%',
+                                                cursor: 'pointer'
+                                            }} className='view d-flex flex-wrap border m-4 p-5 '>
 
-                                        <div id='text' className='container'>
-                                            <p style={{ fontWeight: 'bold' }}>{element.title}</p>
+                                            <div id='text' className='container'>
+                                                <p style={{ fontWeight: 'bold' }}>{element.title}</p>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                </>
-                            )
-                        })
-                    }
-                </div>
-                    <Accordion sx={{mt:28}}>
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
+                    <Accordion sx={{ mt: 28 }}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
@@ -82,7 +81,7 @@ const Melodies = () => {
                                             color="primary"
                                         />
                                     </Box>
-                                        {/* <Box sx={{ width: 500, textAlign: 'center' }}>
+                                    {/* <Box sx={{ width: 500, textAlign: 'center' }}>
                                             <span>Sound 3</span>
                                             <Slider
                                                 aria-label="Temperature"
@@ -114,7 +113,7 @@ const Melodies = () => {
                         </AccordionDetails>
 
                     </Accordion>
-                </div> 
+                </div>
             </div>
         </>
     )

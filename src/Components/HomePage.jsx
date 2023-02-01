@@ -12,7 +12,7 @@ function HomePage() {
 
     useEffect(() => {
         const token = window.localStorage.getItem('token');
-        if(!token) Navigate('/firstpage');
+        // if(!token) Navigate('/firstpage');
         const options = {
             url: 'http://localhost:2000/auth',
             method: 'POST',
