@@ -53,7 +53,7 @@ function HomePage() {
                     <Button variant='outlined'>{date}</Button>
                     <Button sx={{ m: 1 }} variant='outlined'>{time}</Button><br />
                     {/* <img style={{ height: '35vh', display: 'flex' }} src="https://media1.giphy.com/media/XyakWW6WwplIPSHfuR/giphy.gif" alt="loading" /> */}
-                    <img className='imgrotate' src="src/assets/welcome.jpeg" alt="loading" />
+                    <img className='imgrotate' src="/assets/welcome.jpeg" alt="loading" />
                 </div>
             </div>
 
