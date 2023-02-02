@@ -125,7 +125,7 @@ export default function PrimarySearchAppBar() {
             onClick={handleClick}
             sx={{ display: { sm: 'block',fontWeight:'bold', cursor:'pointer' } }}
           >
-            <VolunteerActivismIcon fontSize='large' sx={{mx:1,}}/>
+            <VolunteerActivismIcon fontSize='medium' sx={{mx:1,}}/>
             Breathly 
           </Typography>
           <Box sx={{ flexGrow: 1 }} />

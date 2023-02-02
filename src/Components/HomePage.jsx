@@ -8,6 +8,7 @@ import InnerNav from './InnerNav/InnerNav';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './HomePage.css';
 function HomePage() {
 
     useEffect(() => {
@@ -17,16 +18,16 @@ function HomePage() {
             url: 'http://localhost:2000/auth',
             method: 'POST',
             headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json;charset=UTF-8'
+                'Accept': 'application/json',
+                'Content-Type': 'application/json;charset=UTF-8'
             },
-            data: {token}
-          };
-        axios(options).then(async(res) => {
-            console.log({response: res});
+            data: { token }
+        };
+        axios(options).then(async (res) => {
+            console.log({ response: res });
         });
     }, [])
-    
+
     const Navigate = useNavigate();
 
     const locale = 'en';
@@ -45,40 +46,39 @@ function HomePage() {
     return (
         <div >
             <Navbar />
-            <InnerNav />
-         
-            <div className="wrapper" style={{backgroundColor: '#F0F8FF', padding:'2vh'}}>
+
+            <div className="wrapper" style={{ backgroundColor: '#F0F8FF', padding: '2vh' }}>
                 <div className="sample mt-3">
-                    <h1 style={{marginTop:'10px',marginBottom:'20px', fontStyle: 'italic'}} className="d-flex flex-wrap">{wish + Name}</h1>
+                    <h1 style={{ marginTop: '10px', marginBottom: '20px', fontStyle: 'italic' }} className="d-flex flex-wrap">{wish + Name}</h1>
                     <Button variant='outlined'>{date}</Button>
-                    <Button sx={{ m: 2 }} variant='outlined'>{time}</Button><br />
-                    <img style={{ height: '35vh', display: 'flex' }} src="https://media1.giphy.com/media/XyakWW6WwplIPSHfuR/giphy.gif" alt="loading" />
+                    <Button sx={{ m: 1 }} variant='outlined'>{time}</Button><br />
+                    {/* <img style={{ height: '35vh', display: 'flex' }} src="https://media1.giphy.com/media/XyakWW6WwplIPSHfuR/giphy.gif" alt="loading" /> */}
+                    <img className='imgrotate' src="src/assets/welcome.webp" alt="loading" />
                 </div>
             </div>
 
-            <div className="icons mt-5">
-                <h4 style={{ color: 'darkblue', fontWeight: 'bolder',marginLeft:'2vh'}} ><SelfImprovementIcon fontSize='large' /> Meditation</h4>
+            <div className="icons mt-4">
+                <h4 style={{ color: 'darkblue', fontWeight: 'bolder', marginLeft: '2vh' }} ><SelfImprovementIcon fontSize='large' /> Meditation</h4>
                 <Divider sx={{ m: 2 }} color='secondary' />
-                </div>
+            </div>
 
-                <div className="cards" style={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    justifyContent: 'center'
-                }}>
-                    {
-                        SongsDetails.map((element, index) => {
-                            return (
-                                <>
-                                    <HomeInfo key={index} element={element} />
-                                </>
-                            )
-                        })
-                    }
-                </div>
-            
+            <div className="cards" style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center'
+            }}>
+                {
+                    SongsDetails.map((element, index) => {
+                        return (
+                            <>
+                                <HomeInfo key={index} element={element} />
+                            </>
+                        )
+                    })
+                }
+            </div>
+            <InnerNav />
         </div>
-
     )
 }
 

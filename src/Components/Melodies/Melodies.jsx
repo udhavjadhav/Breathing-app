@@ -20,8 +20,6 @@ const Melodies = () => {
     return (
         <>
             <Navbar />
-            <InnerNav />
-
             <div className='' id='melodies'>
                 <div className='container'>
                     <div className="row d-flex flex-wrap g-1">
@@ -52,7 +50,7 @@ const Melodies = () => {
                             })
                         }
                     </div>
-                    <Accordion sx={{ mt: 28 }}>
+                    <Accordion sx={{ mt: 5 }}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
@@ -62,7 +60,7 @@ const Melodies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                <div className="container d-flex w-50">
+                                <div className="container d-flex w-75">
                                     <Box sx={{ width: 500, textAlign: 'center' }}>
                                         <span>Sound 1</span>
                                         <Slider
@@ -81,33 +79,6 @@ const Melodies = () => {
                                             color="primary"
                                         />
                                     </Box>
-                                    {/* <Box sx={{ width: 500, textAlign: 'center' }}>
-                                            <span>Sound 3</span>
-                                            <Slider
-                                                aria-label="Temperature"
-                                                defaultValue={30}
-                                                getAriaValueText={valuetext}
-                                                color="primary"
-                                            />
-                                        </Box> */}
-                                    {/* <Box sx={{ width: 500, textAlign: 'center' }}>
-                                        <span>Sound 4</span>
-                                        <Slider
-                                            aria-label="Temperature"
-                                            defaultValue={30}
-                                            getAriaValueText={valuetext}
-                                            color="primary"
-                                        />
-                                    </Box> */}
-                                    {/* <Box sx={{ width: 500, textAlign: 'center' }}>
-                                        <span>Sound 5</span>
-                                        <Slider
-                                            aria-label="Temperature"
-                                            defaultValue={30}
-                                            getAriaValueText={valuetext}
-                                            color="primary"
-                                        />
-                                    </Box> */}
                                 </div>
                             </Typography>
                         </AccordionDetails>
@@ -115,6 +86,7 @@ const Melodies = () => {
                     </Accordion>
                 </div>
             </div>
+        <InnerNav />
         </>
     )
 }

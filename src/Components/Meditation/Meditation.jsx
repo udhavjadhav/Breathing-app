@@ -9,9 +9,7 @@ function Meditation() {
     return (
         <>
             <Navbar/>
-            <InnerNav />
-
-            <div className="meditation mt-5">
+            <div className="meditation mt-4">
                 <h4 style={{ color: 'darkblue', fontWeight: 'bolder', marginLeft:'2vh'}} ><SelfImprovementIcon fontSize='medium' /> Meditation</h4>
                 <Divider sx={{ m: 2 }} color='secondary' />
 
@@ -31,6 +29,7 @@ function Meditation() {
                     }
                 </div>
             </div>
+            <InnerNav />
         </>
     )
 }

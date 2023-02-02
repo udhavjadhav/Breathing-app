@@ -5,3 +5,13 @@
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(236,175,203,1) 3%, rgba(233,175,204,1) 6%, rgba(233,175,204,1) 6%, rgba(148,187,233,1) 100%);
 }
+.rotateimg{
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+   
+    transition: width 2s, height 2s, transform 2s;
+}
+.rotateimg:hover{
+    transform: rotate(360deg);
+}

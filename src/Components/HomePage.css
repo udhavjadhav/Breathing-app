@@ -1,0 +1,9 @@
+.imgrotate{
+    display: flex;
+    height: 35vh;
+    border-radius: 50%;
+    transition: width 2s, height 2s, transform 2s;
+}
+.imgrotate:hover{
+    transform: rotate(360deg);
+}
