@@ -59,7 +59,7 @@ const Melodies = () => {
                     <div className="row d-flex flex-wrap g-1">
                         <div>
                             <h4 id='headtext'><ArrowBackIosNewIcon className='back' /><MusicNoteIcon fontSize='medium' />Melodies
-                                <AccessAlarmIcon color='secondary' className='icon' onClick={handleOpen} />
+                                <AccessAlarmIcon  className='icon' onClick={handleOpen} />
                                 <p className='timer' id={showTimer === false ? 'hidedata' : ''} >{minutes < 10 ? "0" + minutes : minutes}:{seconds < 10 ? "0" + seconds : seconds}</p>
                             </h4>
                         </div>
@@ -78,9 +78,9 @@ const Melodies = () => {
                                             key={index} style={{
                                                 height: '16vh', width: '16vh', borderRadius: '50%',
                                                 cursor: 'pointer'
-                                            }} className='view d-flex flex-wrap border m-4 p-5 '>
+                                            }} className='view'>
                                             <div id='text'>
-                                                <p className='title-text' style={{ fontWeight: 'bold' }}>{element.title}</p>
+                                                <p className='titletext' style={{ fontWeight: 'bold' }}>{element.title}</p>
                                             </div>
                                             
                                         </div>
