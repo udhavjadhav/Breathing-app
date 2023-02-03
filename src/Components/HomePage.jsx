@@ -27,9 +27,6 @@ function HomePage() {
             console.log({ response: res });
         });
     }, [])
-
-    const Navigate = useNavigate();
-
     const locale = 'en';
     const today = new Date();
 

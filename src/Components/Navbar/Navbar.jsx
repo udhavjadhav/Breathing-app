@@ -13,7 +13,9 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css'
-
+import LogoutIcon from '@mui/icons-material/Logout';
+import SettingsIcon from '@mui/icons-material/Settings';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
@@ -89,17 +91,17 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Settings</MenuItem>
-      <MenuItem onClick={handleMenuLogout}>Logout</MenuItem>
+      <MenuItem onClick={handleMenuClose}><AccountCircleIcon sx={{m:1}}/>Profile</MenuItem>
+      <MenuItem onClick={handleMenuClose}><AccountCircleIcon sx={{m:1}}/>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}><SettingsIcon sx={{m:1}}/>Settings</MenuItem>
+      <MenuItem  onClick={handleMenuLogout}><LogoutIcon sx={{m:1}} /> Logout</MenuItem>
     </Menu>
   );
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Stack spacing={2} sx={{ width: '100%' }}>
                 <Snackbar anchorOrigin={{
-                    vertical: "right",
+                    vertical: "bottom",
                     horizontal: "right"
                 }} open={open} autoHideDuration={5000} onClose={handleClose}>
                     <Alert onClose={handleClose} severity="secondary" sx={{ width: '100%', cursor:'pointer' }}>

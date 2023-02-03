@@ -3,7 +3,16 @@
     height: 35vh;
     border-radius: 50%;
     transition: width 2s, height 2s, transform 2s;
+    /* animation: spin 8s linear infinite; */
 }
+/* @keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
 .imgrotate:hover{
     transform: rotate(360deg);
 }
