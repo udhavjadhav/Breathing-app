@@ -5,16 +5,13 @@ import Divider from '@mui/material/Divider';
 import InnerNav from '../InnerNav/InnerNav';
 import Navbar from '../Navbar/Navbar'
 import HomeInfo from '../HomeInfo';
-import MedNav from '../Melodies/MelodyNav';
+import MedNav from './MedNav';
 function Meditation() {
     return (
         <>
             <Navbar/>
-           
+           <MedNav/>
             <div className="meditation mt-4">
-                <h4 style={{ color: 'darkblue', fontWeight: 'bolder', marginLeft:'2vh'}} ><SelfImprovementIcon fontSize='medium' /> Meditation</h4>
-                <Divider sx={{ m: 2 }} color='secondary' />
-
                 <div className="wrapper" style={{
                     display: 'flex',
                     flexWrap: 'wrap',

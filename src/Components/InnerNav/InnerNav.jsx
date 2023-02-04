@@ -8,6 +8,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import SettingsIcon from '@mui/icons-material/Settings';
 import { useNavigate } from 'react-router-dom';
 
 export default function InnerNav() {
@@ -18,8 +19,8 @@ export default function InnerNav() {
     const handleClick = () =>{
         Navigate('/')
     }
-    const handleMelodies = () =>{
-        Navigate('/melodies')
+    const handleRelax = () =>{
+        Navigate('/relax')
     }
     const handleMeditation = () =>{
         Navigate('/meditation')
@@ -27,11 +28,14 @@ export default function InnerNav() {
     const handleSleep = () =>{
         Navigate('/sleep')
     }
+    const handleSettings = () =>{
+      Navigate('/settings')
+    }
 
   return (
-    <Box sx={{ pb: 7 }} ref={ref}>
+    <Box ref={ref}>
       <CssBaseline />
-        <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0}} elevation={3}>
+        <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex:1}} elevation={3}>
         <BottomNavigation 
           showLabels
           value={value}
@@ -42,53 +46,10 @@ export default function InnerNav() {
           <BottomNavigationAction onClick={handleClick} label="Home" sx={{fontWeight:'bolder'}} icon={<HomeIcon />} />
           <BottomNavigationAction onClick={handleSleep } label="Sleep" sx={{fontWeight:'bolder'}} icon={<BedtimeIcon />} />
           <BottomNavigationAction onClick={handleMeditation} label="Meditation" sx={{fontWeight:'bolder'}} icon={<SelfImprovementIcon />} />
-          <BottomNavigationAction onClick={handleMelodies} label="Melodies" sx={{fontWeight:'bolder'}} icon={<MusicNoteIcon />} />
+          <BottomNavigationAction onClick={handleRelax} label="Relax" sx={{fontWeight:'bolder'}} icon={<MusicNoteIcon />} />
+          <BottomNavigationAction onClick={handleSettings} label="Settings" sx={{fontWeight:'bolder'}} icon={<SettingsIcon />} />
         </BottomNavigation>
       </Paper>
     </Box>
   );
 }
-
-// import React from 'react'
-// import { useNavigate } from 'react-router-dom'
-// import HomeIcon from '@mui/icons-material/Home';
-// import BedtimeIcon from '@mui/icons-material/Bedtime';
-// import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
-// import MusicNoteIcon from '@mui/icons-material/MusicNote';
-
-// function InnerNav() {
-//     const Navigate = useNavigate();
-//     const handleClick = () =>{
-//         Navigate('/')
-//     }
-//     const handleMelodies = () =>{
-//         Navigate('/melodies')
-//     }
-//     const handleMeditation = () =>{
-//         Navigate('/meditation')
-//     }
-//     const handleRelax = () =>{
-//         Navigate('/relax')
-//     }
-//     const handleSleep = () =>{
-//         Navigate('/sleep')
-//     }
-//   return (
-//     <div id='appbar' className='container-fluid d-flex shadow pt-2 text-center mw-90'>
-//         <div className='container d-flex'>
-//             <p style={{cursor:'pointer'}} onClick={handleClick}><HomeIcon sx={{text:'center'}} /><br /> Home</p>
-//         </div>
-//         <div className='container d-flex'>
-//             <p style={{cursor:'pointer'}} onClick={handleMeditation} ><SelfImprovementIcon /><br /> Meditation</p>
-//         </div>  
-//         <div className='container d-flex '>
-//             <p style={{cursor:'pointer'}} onClick={handleMelodies}>  <MusicNoteIcon /><br /> Melodies</p>
-//         </div>
-//         <div className='container d-flex'>
-//             <p style={{cursor:'pointer'}} onClick={handleSleep}><BedtimeIcon /><br /> Sleep</p>
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default InnerNav;

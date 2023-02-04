@@ -10,7 +10,7 @@ import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-export default function SleepNav() {
+export default function RelaxNav() {
  
   const [showTimer, setShowTimer] = useState(false);
 
@@ -43,10 +43,10 @@ export default function SleepNav() {
 
   const Navigate = useNavigate();
   const handleAll = () => {
-    Navigate('/melodies')
+    Navigate('/relax')
   }
   const handleFav = () => {
-    Navigate('/nature')
+    Navigate('/myfavourite')
   }
   const handleStories = () => {
     Navigate('/musical')
@@ -55,14 +55,14 @@ export default function SleepNav() {
     Navigate('/category')
   }
   const handleBack = () =>{
-    Navigate('/relax')
+    Navigate('/')
   }
 
   return (
     <Box sx={{ flexGrow: 1 }}  >
       <AppBar color='' position="static" sx={{ position: 'relative', left: 0, right: 0, zIndex: 1}} elevation={22} >
         <div>
-          <h4 id='headtext'><ArrowBackIosNewIcon sx={{cursor:'pointer'}} onClick={handleBack} className='back' />Melodies
+          <h4 id='headtext'><ArrowBackIosNewIcon onClick={handleBack} sx={{cursor:'pointer'}} className='back' />Relax
             <AccessAlarmIcon className='icon' onClick={handleOpen} />
             <p className='timer' id={showTimer === false ? 'hidedata' : ''} >{minutes < 10 ? "0" + minutes : minutes}:{seconds < 10 ? "0" + seconds : seconds}</p>
           </h4>
@@ -73,13 +73,13 @@ export default function SleepNav() {
               <ListItemText primary="All" />
             </ListItemButton>
             <ListItemButton onClick={handleFav} sx={{ textAlign: 'center' }}>
-              <ListItemText primary="Nature" />
+              <ListItemText primary="MyFavorite" />
             </ListItemButton>
             <ListItemButton onClick={handleStories} sx={{ textAlign: 'center' }}>
-              <ListItemText primary="Musical" />
+              <ListItemText primary="Beginners" />
             </ListItemButton>
             <ListItemButton onClick={handleMusic} sx={{ textAlign: 'center' }}>
-              <ListItemText primary="Category" />
+              <ListItemText primary="Self-Calm" />
             </ListItemButton>
           </ListItem>
         </List>

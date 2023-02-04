@@ -16,7 +16,8 @@ import Musical from './Components/InnerNavigation/Musical'
 import Nature from './Components/InnerNavigation/Nature'
 import Stories from './Components/Sleep/Stories'
 import MyFavourite from './Components/Sleep/MyFavourite';
-import Music from './Components/Sleep/Music'
+import Music from './Components/Sleep/Music';
+import Settings from './Components/Settings/Settings'
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
           <Route path='/myfavourite' element={<MyFavourite/>}/>
           <Route path='/stories' element={<Stories/>}/>
           <Route path='/music' element={<Music/>}/>
+          <Route path='/settings' element={<Settings/>}/>
 
         </Routes>
       </Router>

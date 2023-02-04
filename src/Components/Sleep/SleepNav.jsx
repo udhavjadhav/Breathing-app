@@ -53,12 +53,15 @@ export default function SleepNav() {
     const handleMusic = () => {
         Navigate('/music')
     }
+    const handleBack = () =>{
+        Navigate('/')
+    }
 
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar color='' position="static" sx={{ position: 'relative', left: 0, right: 0, zIndex: 1 }} elevation={22} >
                 <div>
-                    <h4 id='headtext'><ArrowBackIosNewIcon className='back' />Sleep
+                    <h4 id='headtext'><ArrowBackIosNewIcon onClick={handleBack} sx={{cursor:'pointer'}} className='back' />Sleep
                         <AccessAlarmIcon className='icon' onClick={handleOpen} />
                         <p className='timer' id={showTimer === false ? 'hidedata' : ''} >{minutes < 10 ? "0" + minutes : minutes}:{seconds < 10 ? "0" + seconds : seconds}</p>
                     </h4>

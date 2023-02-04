@@ -12,7 +12,7 @@ import Slider from '@mui/material/Slider';
 import './Melodies.css'
 import MelodyNav from './MelodyNav';
 
-const Melodies = () => {
+const Melodies = ({demo}) => {
     const [condition, setCondition] = useState([]);
     function valuetext(value) {
         return `${value}°C`;

@@ -19,7 +19,7 @@ function Sleep() {
         <>
             <Navbar />
                 <SleepNav />
-            <div className="sleep">
+            <div className="sleepdiv">
                 <div className="sleepsection" style={{
                     display: 'flex',
                     flexWrap: 'wrap',
@@ -32,7 +32,7 @@ function Sleep() {
                               
                                     <Card onClick={() => {
                                         Navigate(`/sleepsongs/${element.id}`)
-                                    }} sx={{ width: 412, maxWidth: '90%', m: 2, flexDirection: 'row' }}>
+                                    }} sx={{ width: 412, maxWidth: '90%', m:2,  flexDirection: 'row' }}>
                                         <CardActionArea>
                                             <CardMedia
                                                 component="img"

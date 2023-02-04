@@ -1,17 +1,15 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar';
-import SleepNav from './SleepNav';
 import InnerNav from '../InnerNav/InnerNav';
 
-const Music = () => {
+const Settings = () => {
   return (
     <div>
-    <Navbar/>
-      <SleepNav/>
-      Music Works
+        <Navbar/>
+      Settings works!
       <InnerNav/>
     </div>
   )
 }
 
-export default Music
+export default Settings
