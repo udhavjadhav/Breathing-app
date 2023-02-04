@@ -40,9 +40,9 @@ export default function InnerNav() {
           }}
         >
           <BottomNavigationAction onClick={handleClick} label="Home" sx={{fontWeight:'bolder'}} icon={<HomeIcon />} />
+          <BottomNavigationAction onClick={handleSleep } label="Sleep" sx={{fontWeight:'bolder'}} icon={<BedtimeIcon />} />
           <BottomNavigationAction onClick={handleMeditation} label="Meditation" sx={{fontWeight:'bolder'}} icon={<SelfImprovementIcon />} />
           <BottomNavigationAction onClick={handleMelodies} label="Melodies" sx={{fontWeight:'bolder'}} icon={<MusicNoteIcon />} />
-          <BottomNavigationAction onClick={handleSleep } label="Sleep" sx={{fontWeight:'bolder'}} icon={<BedtimeIcon />} />
         </BottomNavigation>
       </Paper>
     </Box>

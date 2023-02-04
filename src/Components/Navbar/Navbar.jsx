@@ -109,7 +109,7 @@ export default function PrimarySearchAppBar() {
                     </Alert>
                 </Snackbar>
             </Stack>
-      <AppBar id='appbar'color='primary' position="static">
+      <AppBar id='appbar'color='primary' position="static" >
         <Toolbar>
           <IconButton
             size="large"

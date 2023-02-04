@@ -59,16 +59,16 @@ const MelodiesDetails = [
         title:'Sand',
         song:'../../../assets/Melodies/Sand.mp3'
     },
-    // {
-    //     id:13,
-    //     title:'Nature',
-    //     song:'../../../assets/Melodies/Nature.mp3'
-    // },
-    // {
-    //     id:14,
-    //     title:'Relax',
-    //     song:'../../../assets/Melodies/Relax.mp3'
-    // },
+    {
+        id:13,
+        title:'Nature',
+        song:'../../../assets/Melodies/Nature.mp3'
+    },
+    {
+        id:14,
+        title:'Relax',
+        song:'../../../assets/Melodies/Relax.mp3'
+    },
     // {
     //     id:15,
     //     title:'Normal',

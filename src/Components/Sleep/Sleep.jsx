@@ -1,8 +1,9 @@
 import React from 'react'
 import SleepDetails from './SleepDetails';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
 import Navbar from '../Navbar/Navbar'
+import SleepNav from './SleepNav';
 import InnerNav from '../InnerNav/InnerNav';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -11,15 +12,14 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
+
 function Sleep() {
     const Navigate = useNavigate();
     return (
         <>
             <Navbar />
-            <div className="sleep mt-4">
-                <h4 style={{ color: 'darkblue', fontWeight: 'bolder', marginLeft: '2vh' }} ><BedtimeIcon fontSize='medium' /> Sleep</h4>
-                <Divider sx={{ m: 2 }} color='secondary' />
-
+                <SleepNav />
+            <div className="sleep">
                 <div className="sleepsection" style={{
                     display: 'flex',
                     flexWrap: 'wrap',
@@ -29,8 +29,9 @@ function Sleep() {
                         SleepDetails.map((element, index) => {
                             return (
                                 <>
-                                    <Card onClick={()=>{
-                                         Navigate(`/sleepsongs/${element.id}`)
+                              
+                                    <Card onClick={() => {
+                                        Navigate(`/sleepsongs/${element.id}`)
                                     }} sx={{ width: 412, maxWidth: '90%', m: 2, flexDirection: 'row' }}>
                                         <CardActionArea>
                                             <CardMedia
@@ -49,6 +50,7 @@ function Sleep() {
                                             </CardContent>
                                         </CardActionArea>
                                     </Card>
+                                
                                     <InnerNav />
                                 </>
                             )
@@ -56,6 +58,7 @@ function Sleep() {
                     }
                 </div>
             </div>
+
         </>
     )
 }
