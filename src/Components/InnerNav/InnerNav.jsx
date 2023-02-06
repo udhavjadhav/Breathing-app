@@ -33,9 +33,10 @@ export default function InnerNav() {
     }
 
   return (
-    <Box ref={ref}>
+    <Box sx={{p:4}} ref={ref}>
       <CssBaseline />
         <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex:1}} elevation={3}>
+          <div className='bottomNav'>
         <BottomNavigation 
           showLabels
           value={value}
@@ -43,12 +44,13 @@ export default function InnerNav() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction onClick={handleClick} label="Home" sx={{fontWeight:'bolder'}} icon={<HomeIcon />} />
-          <BottomNavigationAction onClick={handleSleep } label="Sleep" sx={{fontWeight:'bolder'}} icon={<BedtimeIcon />} />
-          <BottomNavigationAction onClick={handleMeditation} label="Meditation" sx={{fontWeight:'bolder'}} icon={<SelfImprovementIcon />} />
-          <BottomNavigationAction onClick={handleRelax} label="Relax" sx={{fontWeight:'bolder'}} icon={<MusicNoteIcon />} />
-          <BottomNavigationAction onClick={handleSettings} label="Settings" sx={{fontWeight:'bolder'}} icon={<SettingsIcon />} />
+          <BottomNavigationAction onClick={handleClick} label="Home" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<HomeIcon />} />
+          <BottomNavigationAction onClick={handleSleep } label="Sleep" sx={{fontWeight:'bolder', minWidth:'65px' }} icon={<BedtimeIcon />} />
+          <BottomNavigationAction onClick={handleMeditation} label="Meditation" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<SelfImprovementIcon />} />
+          <BottomNavigationAction onClick={handleRelax} label="Relax" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<MusicNoteIcon />} />
+          <BottomNavigationAction onClick={handleSettings} label="Settings" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<SettingsIcon />} />
         </BottomNavigation>
+    </div>
       </Paper>
     </Box>
   );

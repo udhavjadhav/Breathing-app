@@ -39,6 +39,7 @@ export default function PrimarySearchAppBar() {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  const Navigate = useNavigate()
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -54,13 +55,19 @@ export default function PrimarySearchAppBar() {
   const handleMenuClose = () => {
     setAnchorEl(null);
     handleMobileMenuClose();
+    
   };
+
+  const handleMenuSettings = () =>{
+    // setAnchorEl(null);
+    // handleMobileMenuClose();
+    Navigate('./settings')
+  }
 
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const Navigate = useNavigate()
   const handleNotification = () =>{
     setOpen(true);
   }
@@ -93,7 +100,7 @@ export default function PrimarySearchAppBar() {
     >
       <MenuItem onClick={handleMenuClose}><AccountCircleIcon sx={{m:1}}/>Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}><AccountCircleIcon sx={{m:1}}/>My account</MenuItem>
-      <MenuItem onClick={handleMenuClose}><SettingsIcon sx={{m:1}}/>Settings</MenuItem>
+      <MenuItem onClick={handleMenuSettings}><SettingsIcon sx={{m:1}}/>Settings</MenuItem>
       <MenuItem  onClick={handleMenuLogout}><LogoutIcon sx={{m:1}} /> Logout</MenuItem>
     </Menu>
   );

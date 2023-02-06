@@ -73,13 +73,13 @@ export default function RelaxNav() {
               <ListItemText primary="All" />
             </ListItemButton>
             <ListItemButton onClick={handleFav} sx={{ textAlign: 'center' }}>
-              <ListItemText primary="MyFavorite" />
+              <ListItemText primary="Favorite" />
             </ListItemButton>
             <ListItemButton onClick={handleStories} sx={{ textAlign: 'center' }}>
-              <ListItemText primary="Beginners" />
+              <ListItemText primary="Beginner" />
             </ListItemButton>
             <ListItemButton onClick={handleMusic} sx={{ textAlign: 'center' }}>
-              <ListItemText primary="Self-Calm" />
+              <ListItemText primary="Self-calm" />
             </ListItemButton>
           </ListItem>
         </List>
