@@ -11,7 +11,7 @@ function Welcome() {
     return (
         <div className='welcome'>
             <div className='container'>
-                <div className="icon mb-2 text-center">
+                <div className="icon2 mb-2 text-center">
                     <img className='logo' src="src/assets/logo.png" />
                 </div>
                 <div className="container text-center mt-4">

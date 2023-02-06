@@ -18,6 +18,8 @@ import Stories from './Components/Sleep/Stories'
 import MyFavourite from './Components/Sleep/MyFavourite';
 import Music from './Components/Sleep/Music';
 import Settings from './Components/Settings/Settings'
+import Account from './Components/Settings/Account';
+import Subscriptions from './Components/Settings/Subscriptions'
 
 function App() {
 
@@ -43,7 +45,10 @@ function App() {
           <Route path='/stories' element={<Stories/>}/>
           <Route path='/music' element={<Music/>}/>
           <Route path='/settings' element={<Settings/>}/>
+          <Route path='/account' element={<Account/>}/>
+          <Route path='/subscriptions' element={<Subscriptions/>}/>
 
+          
         </Routes>
       </Router>
     </div>

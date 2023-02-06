@@ -80,6 +80,9 @@ export default function PrimarySearchAppBar() {
     window.localStorage.removeItem('token');
     Navigate('/firstpage');
   }
+  const handleMenuAccount = () =>{
+    Navigate('/account');
+  }
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
@@ -99,7 +102,7 @@ export default function PrimarySearchAppBar() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}><AccountCircleIcon sx={{m:1}}/>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}><AccountCircleIcon sx={{m:1}}/>My account</MenuItem>
+      <MenuItem onClick={handleMenuAccount}><AccountCircleIcon sx={{m:1}}/>My account</MenuItem>
       <MenuItem onClick={handleMenuSettings}><SettingsIcon sx={{m:1}}/>Settings</MenuItem>
       <MenuItem  onClick={handleMenuLogout}><LogoutIcon sx={{m:1}} /> Logout</MenuItem>
     </Menu>

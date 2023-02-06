@@ -18,7 +18,7 @@ function Sleep() {
     return (
         <>
             <Navbar />
-                <SleepNav />
+            <SleepNav />
             <div className="sleepdiv">
                 <div className="sleepsection" style={{
                     display: 'flex',
@@ -51,7 +51,6 @@ function Sleep() {
                                         </CardActionArea>
                                     </Card>
                                 
-                                    <InnerNav />
                                 </>
                             )
                         })
@@ -59,6 +58,7 @@ function Sleep() {
                 </div>
             </div>
 
+                    <InnerNav />
         </>
     )
 }

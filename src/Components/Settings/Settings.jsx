@@ -19,10 +19,12 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import InfoIcon from '@mui/icons-material/Info';
 import GavelIcon from '@mui/icons-material/Gavel';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import { useNavigate } from 'react-router-dom';
 
 export default function Settings() {
   const [checked, setChecked] = React.useState(['wifi', '']);
-
+  const Navigate = useNavigate()
   const handleToggle = (value) => () => {
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
@@ -40,10 +42,10 @@ export default function Settings() {
     <>
       <Navbar />
       <List
-        sx={{ width: '100%', bgcolor: 'background.paper' }}
-        subheader={<ListSubheader>Settings</ListSubheader>}
+        sx={{ width: '100%', bgcolor: 'background.paper', cursor:'pointer' }}
+        subheader={<ListSubheader  sx={{fontWeight:'bolder', fontSize:'18px'}}><ArrowBackIosIcon fontSize='small' onClick={()=>Navigate('/')}/>Settings</ListSubheader>}
       >
-        <ListItem>
+        <ListItem onClick={()=>Navigate('/account')}>
           <ListItemIcon>
             <AccountCircleIcon />
           </ListItemIcon>
@@ -53,11 +55,11 @@ export default function Settings() {
           </ListItemIcon>
         </ListItem>
 
-        <ListItem>
+        <ListItem onClick={()=>Navigate('/subscriptions')}>
           <ListItemIcon>
             <SubscriptionsIcon />
           </ListItemIcon>
-          <ListItemText primary="Manage Subscriptions" />
+          <ListItemText primary="Manage Subscription" />
           <ListItemIcon>
             <ChevronRightIcon sx={{mx:2}}/>
           </ListItemIcon>
