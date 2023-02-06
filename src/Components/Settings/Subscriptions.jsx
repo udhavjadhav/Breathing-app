@@ -10,7 +10,17 @@ import { Button, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 export default function TabsPricingExample() {
-  const Navigate = useNavigate()
+  const Navigate = useNavigate();
+
+  const commonStyles = {
+    bgcolor: 'background.paper',
+    borderColor: 'text.primary',
+    m: 1,
+    border: 1,
+    width: '5rem',
+    height: '5rem',
+  };
+  
   return (
     <>
       <Navbar />
@@ -118,6 +128,7 @@ export default function TabsPricingExample() {
           </Box>'
         </TabPanel>
       </Tabs>
+ 
       <InnerNav />
     </>
   );

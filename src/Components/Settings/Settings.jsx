@@ -21,6 +21,7 @@ import GavelIcon from '@mui/icons-material/Gavel';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useNavigate } from 'react-router-dom';
+import { Divider } from '@mui/material';
 
 export default function Settings() {
   const [checked, setChecked] = React.useState(['wifi', '']);
@@ -43,8 +44,9 @@ export default function Settings() {
       <Navbar />
       <List
         sx={{ width: '100%', bgcolor: 'background.paper', cursor:'pointer' }}
-        subheader={<ListSubheader  sx={{fontWeight:'bolder', fontSize:'18px'}}><ArrowBackIosIcon fontSize='small' onClick={()=>Navigate('/')}/>Settings</ListSubheader>}
+        subheader={<ListSubheader  sx={{fontWeight:'bolder', fontSize:'18px', mt:2, mb:1}}><ArrowBackIosIcon fontSize='small' onClick={()=>Navigate('/')}/>Settings</ListSubheader>}
       >
+        {/* <Divider sx={{m:1}}/> */}
         <ListItem onClick={()=>Navigate('/account')}>
           <ListItemIcon>
             <AccountCircleIcon />

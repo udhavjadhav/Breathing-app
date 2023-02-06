@@ -1,10 +1,10 @@
 import React from 'react'
 import SongsDetails from '../SongsDetails'
-import Divider from '@mui/material/Divider';
 import Navbar from '../Navbar/Navbar'
 import InnerNav from '../InnerNav/InnerNav'
 import HomeInfo from '../HomeInfo';
 import Button from '@mui/material/Button';
+import { Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import RelaxNav from './RelaxNav';
 function Meditation() {
@@ -17,7 +17,9 @@ function Meditation() {
             <Navbar/>
             <RelaxNav/>
             <div className="meditation mt-4">
-                <Button sx={{fontWeight: 'bolder'}} fullWidth  onClick={handleClick} variant="contained" >Melodies</Button>
+            <Box textAlign='center'>
+                <Button sx={{fontWeight: 'bolder', maxWidth:'50%', m:2}} fullWidth  onClick={handleClick} variant="contained" >Melodies</Button>
+            </Box>
                 <div className="wrapper" style={{
                     display: 'flex',
                     flexWrap: 'wrap',
