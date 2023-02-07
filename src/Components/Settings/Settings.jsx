@@ -7,21 +7,20 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
 import Switch from '@mui/material/Switch';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
+import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined';
 import DateRangeIcon from '@mui/icons-material/DateRange';
-import DownloadIcon from '@mui/icons-material/Download';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import DoNotDisturbIcon from '@mui/icons-material/DoNotDisturb';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import InfoIcon from '@mui/icons-material/Info';
-import GavelIcon from '@mui/icons-material/Gavel';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import GavelOutlinedIcon from '@mui/icons-material/GavelOutlined';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useNavigate } from 'react-router-dom';
-import { Divider } from '@mui/material';
 
 export default function Settings() {
   const [checked, setChecked] = React.useState(['wifi', '']);
@@ -49,7 +48,7 @@ export default function Settings() {
         {/* <Divider sx={{m:1}}/> */}
         <ListItem onClick={()=>Navigate('/account')}>
           <ListItemIcon>
-            <AccountCircleIcon />
+            <AccountCircleOutlinedIcon color="info"/>
           </ListItemIcon>
           <ListItemText primary="Account" />
           <ListItemIcon>
@@ -59,7 +58,7 @@ export default function Settings() {
 
         <ListItem onClick={()=>Navigate('/subscriptions')}>
           <ListItemIcon>
-            <SubscriptionsIcon />
+            <SubscriptionsOutlinedIcon color="info"/>
           </ListItemIcon>
           <ListItemText primary="Manage Subscription" />
           <ListItemIcon>
@@ -69,7 +68,7 @@ export default function Settings() {
 
         <ListItem>
           <ListItemIcon>
-            <DateRangeIcon />
+            <DateRangeIcon color="info"/>
           </ListItemIcon>
           <ListItemText primary="Reminders" />
           <ListItemIcon>
@@ -79,7 +78,7 @@ export default function Settings() {
 
         <ListItem>
           <ListItemIcon>
-            < DownloadIcon  />
+            <DownloadOutlinedIcon color="info"/>
           </ListItemIcon>
           <ListItemText id="switch-list-label-wifi" primary="Download over cellular" />
           <Switch
@@ -93,7 +92,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <DarkModeIcon />
+            <DarkModeOutlinedIcon color="info"/>
           </ListItemIcon>
           <ListItemText id="switch-list-label-darkmode" primary="Enable Dark Mode" />
           <Switch
@@ -107,7 +106,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <DoNotDisturbIcon />
+            <DoNotDisturbIcon color="info"/>
           </ListItemIcon>
           <ListItemText id="switch-list-label-donotdisturb" primary="Do not disturb" />
           <Switch
@@ -121,7 +120,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <NotificationsIcon />
+            <NotificationsNoneOutlinedIcon color="info"/>
           </ListItemIcon>
           <ListItemText id="switch-list-label-notification" primary="Push Notification" />
           <Switch
@@ -135,7 +134,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <SupportAgentIcon/>
+            <SupportAgentIcon color="info"/>
           </ListItemIcon>
           <ListItemText primary="Support" />
           <ListItemIcon>
@@ -144,7 +143,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <InfoIcon />
+            <InfoOutlinedIcon color="info"/>
           </ListItemIcon>
           <ListItemText primary="About" />
           <ListItemIcon>
@@ -153,7 +152,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <LockOpenIcon/>
+            <LockOpenIcon color="info"/>
           </ListItemIcon>
           <ListItemText primary="Privacy Policy" />
           <ListItemIcon>
@@ -162,7 +161,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <GavelIcon />
+            <GavelOutlinedIcon color="info"/>
           </ListItemIcon>
           <ListItemText primary="Terms & Conditions" />
           <ListItemIcon>
