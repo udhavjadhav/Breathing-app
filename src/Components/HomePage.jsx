@@ -42,7 +42,7 @@ function HomePage() {
 
     return (
         <div >
-            <Navbar />
+            {/* <Navbar /> */}
 
             <div className="wrapper" style={{ backgroundColor: '#F0F8FF', padding: '2vh' }}>
                 <div className="sample mt-3">

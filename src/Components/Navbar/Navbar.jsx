@@ -9,11 +9,13 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
+import AccountBalanceOutlinedIcon from '@mui/icons-material/AccountBalanceOutlined';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css'
-import LogoutIcon from '@mui/icons-material/Logout';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
@@ -101,10 +103,10 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}><AccountCircleIcon sx={{m:1}}/>Profile</MenuItem>
-      <MenuItem onClick={handleMenuAccount}><AccountCircleIcon sx={{m:1}}/>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}><Person2OutlinedIcon color='info' sx={{m:1}}/>Profile</MenuItem>
+      <MenuItem onClick={handleMenuAccount}><AccountBalanceOutlinedIcon color='info' sx={{m:1}}/>My account</MenuItem>
       {/* <MenuItem onClick={handleMenuSettings}><SettingsIcon sx={{m:1}}/>Settings</MenuItem> */}
-      <MenuItem  onClick={handleMenuLogout}><LogoutIcon sx={{m:1}} /> Logout</MenuItem>
+      <MenuItem  onClick={handleMenuLogout}><LogoutOutlinedIcon color='info' sx={{m:1}} /> Logout</MenuItem>
     </Menu>
   );
   return (
