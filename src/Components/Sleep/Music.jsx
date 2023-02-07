@@ -8,7 +8,7 @@ const Music = () => {
     <div>
     <Navbar/>
       <SleepNav/>
-      Music Works
+      <h5 className='d-flex mt-5 justify-content-center'> Music Works</h5>
       <InnerNav/>
     </div>
   )

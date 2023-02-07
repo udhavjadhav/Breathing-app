@@ -20,6 +20,9 @@ import Music from './Components/Sleep/Music';
 import Settings from './Components/Settings/Settings'
 import Account from './Components/Settings/Account';
 import Subscriptions from './Components/Settings/Subscriptions'
+import Beginners from './Components/Relax/Beginners'
+import Favourite from './Components/Relax/Favourite'
+import SelfCalm from './Components/Relax/SelfCalm'
 
 function App() {
 
@@ -47,8 +50,10 @@ function App() {
           <Route path='/settings' element={<Settings/>}/>
           <Route path='/account' element={<Account/>}/>
           <Route path='/subscriptions' element={<Subscriptions/>}/>
+          <Route path='/favourite' element={<Favourite/>}/>
+          <Route path='/beginners' element={<Beginners/>}/>
+          <Route path='/selfcalm' element={<SelfCalm/>}/>
 
-          
         </Routes>
       </Router>
     </div>

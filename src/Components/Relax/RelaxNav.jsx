@@ -46,13 +46,13 @@ export default function RelaxNav() {
     Navigate('/relax')
   }
   const handleFav = () => {
-    Navigate('/myfavourite')
+    Navigate('/favourite')
   }
   const handleStories = () => {
-    Navigate('/musical')
+    Navigate('/beginners')
   }
   const handleMusic = () => {
-    Navigate('/category')
+    Navigate('/selfcalm')
   }
   const handleBack = () =>{
     Navigate('/')
@@ -76,7 +76,7 @@ export default function RelaxNav() {
               <ListItemText primary="Favorite" />
             </ListItemButton>
             <ListItemButton onClick={handleStories} sx={{ textAlign: 'center' }}>
-              <ListItemText primary="Beginner" />
+              <ListItemText primary="Beginners" />
             </ListItemButton>
             <ListItemButton onClick={handleMusic} sx={{ textAlign: 'center' }}>
               <ListItemText primary="Self-calm" />

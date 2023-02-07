@@ -7,7 +7,7 @@ const Stories = () => {
     <div>
        <Navbar/>
       <SleepNav/>
-      Stories Works!
+      <h5 className='d-flex mt-5 justify-content-center'> Stories Works!</h5>
     <InnerNav/>
     </div>
   )

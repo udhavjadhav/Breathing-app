@@ -58,11 +58,11 @@ export default function PrimarySearchAppBar() {
     
   };
 
-  const handleMenuSettings = () =>{
-    // setAnchorEl(null);
-    // handleMobileMenuClose();
-    Navigate('./settings')
-  }
+  // const handleMenuSettings = () =>{
+  //   // setAnchorEl(null);
+  //   // handleMobileMenuClose();
+  //   Navigate('./settings')
+  // }
 
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
@@ -103,7 +103,7 @@ export default function PrimarySearchAppBar() {
     >
       <MenuItem onClick={handleMenuClose}><AccountCircleIcon sx={{m:1}}/>Profile</MenuItem>
       <MenuItem onClick={handleMenuAccount}><AccountCircleIcon sx={{m:1}}/>My account</MenuItem>
-      <MenuItem onClick={handleMenuSettings}><SettingsIcon sx={{m:1}}/>Settings</MenuItem>
+      {/* <MenuItem onClick={handleMenuSettings}><SettingsIcon sx={{m:1}}/>Settings</MenuItem> */}
       <MenuItem  onClick={handleMenuLogout}><LogoutIcon sx={{m:1}} /> Logout</MenuItem>
     </Menu>
   );

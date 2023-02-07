@@ -4,11 +4,11 @@ import CssBaseline from '@mui/material/CssBaseline';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Paper from '@mui/material/Paper';
-import HomeIcon from '@mui/icons-material/Home';
-import BedtimeIcon from '@mui/icons-material/Bedtime';
-import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import SettingsIcon from '@mui/icons-material/Settings';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import BedtimeOutlinedIcon from '@mui/icons-material/BedtimeOutlined';
+import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
+import MusicNoteOutlinedIcon from '@mui/icons-material/MusicNoteOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import { useNavigate } from 'react-router-dom';
 
 export default function InnerNav() {
@@ -44,11 +44,11 @@ export default function InnerNav() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction onClick={handleClick} label="Home" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<HomeIcon />} />
-          <BottomNavigationAction onClick={handleSleep } label="Sleep" sx={{fontWeight:'bolder', minWidth:'65px' }} icon={<BedtimeIcon />} />
-          <BottomNavigationAction onClick={handleMeditation} label="Meditation" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<SelfImprovementIcon />} />
-          <BottomNavigationAction onClick={handleRelax} label="Relax" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<MusicNoteIcon />} />
-          <BottomNavigationAction onClick={handleSettings} label="Settings" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<SettingsIcon />} />
+          <BottomNavigationAction onClick={handleClick} label="Home" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<HomeOutlinedIcon />} />
+          <BottomNavigationAction onClick={handleSleep } label="Sleep" sx={{fontWeight:'bolder', minWidth:'65px' }} icon={<BedtimeOutlinedIcon/>} />
+          <BottomNavigationAction onClick={handleMeditation} label="Meditation" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<SpaOutlinedIcon />} />
+          <BottomNavigationAction onClick={handleRelax} label="Relax" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<MusicNoteOutlinedIcon />} />
+          <BottomNavigationAction onClick={handleSettings} label="Settings" sx={{fontWeight:'bolder', minWidth:'65px'}} icon={<SettingsOutlinedIcon />} />
         </BottomNavigation>
     </div>
       </Paper>

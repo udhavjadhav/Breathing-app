@@ -8,7 +8,7 @@ const MyFavourite = () => {
     <div>
       <Navbar/>
       <SleepNav/>
-      Myfav works!
+      <h5 className='d-flex mt-5 justify-content-center'> Myfav works!</h5>
       <InnerNav/>
     </div>
   )
