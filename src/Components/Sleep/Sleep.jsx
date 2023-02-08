@@ -1,7 +1,5 @@
 import React from 'react'
 import SleepDetails from './SleepDetails';
-import BedtimeIcon from '@mui/icons-material/Bedtime';
-// import Divider from '@mui/material/Divider';
 import Navbar from '../Navbar/Navbar'
 import SleepNav from './SleepNav';
 import InnerNav from '../InnerNav/InnerNav';
@@ -11,7 +9,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-
 
 function Sleep() {
     const Navigate = useNavigate();

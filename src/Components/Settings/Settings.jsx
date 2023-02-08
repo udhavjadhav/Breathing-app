@@ -1,4 +1,5 @@
 import React from 'react'
+import './Settings.css';
 import Navbar from '../Navbar/Navbar';
 import InnerNav from '../InnerNav/InnerNav';
 import List from '@mui/material/List';
@@ -7,7 +8,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
 import Switch from '@mui/material/Switch';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined';
 import DateRangeIcon from '@mui/icons-material/DateRange';
@@ -45,10 +46,9 @@ export default function Settings() {
         sx={{ width: '100%', bgcolor: 'background.paper', cursor:'pointer' }}
         subheader={<ListSubheader  sx={{fontWeight:'bolder', fontSize:'18px', mt:2, mb:1}}><ArrowBackIosIcon fontSize='small' onClick={()=>Navigate('/')}/>Settings</ListSubheader>}
       >
-        {/* <Divider sx={{m:1}}/> */}
         <ListItem onClick={()=>Navigate('/account')}>
           <ListItemIcon>
-            <AccountCircleOutlinedIcon color="info"/>
+            <Person2OutlinedIcon fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText primary="Account" />
           <ListItemIcon>
@@ -58,7 +58,7 @@ export default function Settings() {
 
         <ListItem onClick={()=>Navigate('/subscriptions')}>
           <ListItemIcon>
-            <SubscriptionsOutlinedIcon color="info"/>
+            <SubscriptionsOutlinedIcon  fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText primary="Manage Subscription" />
           <ListItemIcon>
@@ -68,7 +68,7 @@ export default function Settings() {
 
         <ListItem>
           <ListItemIcon>
-            <DateRangeIcon color="info"/>
+            <DateRangeIcon fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText primary="Reminders" />
           <ListItemIcon>
@@ -78,7 +78,7 @@ export default function Settings() {
 
         <ListItem>
           <ListItemIcon>
-            <DownloadOutlinedIcon color="info"/>
+            <DownloadOutlinedIcon fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText id="switch-list-label-wifi" primary="Download over cellular" />
           <Switch
@@ -92,7 +92,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <DarkModeOutlinedIcon color="info"/>
+            <DarkModeOutlinedIcon fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText id="switch-list-label-darkmode" primary="Enable Dark Mode" />
           <Switch
@@ -106,7 +106,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <DoNotDisturbIcon color="info"/>
+            <DoNotDisturbIcon fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText id="switch-list-label-donotdisturb" primary="Do not disturb" />
           <Switch
@@ -120,7 +120,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <NotificationsNoneOutlinedIcon color="info"/>
+            <NotificationsNoneOutlinedIcon fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText id="switch-list-label-notification" primary="Push Notification" />
           <Switch
@@ -134,7 +134,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <SupportAgentIcon color="info"/>
+            <SupportAgentIcon fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText primary="Support" />
           <ListItemIcon>
@@ -143,7 +143,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <InfoOutlinedIcon color="info"/>
+            <InfoOutlinedIcon fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText primary="About" />
           <ListItemIcon>
@@ -152,7 +152,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <LockOpenIcon color="info"/>
+            <LockOpenIcon fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText primary="Privacy Policy" />
           <ListItemIcon>
@@ -161,7 +161,7 @@ export default function Settings() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <GavelOutlinedIcon color="info"/>
+            <GavelOutlinedIcon fontSize='large' className='icon shadow p-1' color="info"/>
           </ListItemIcon>
           <ListItemText primary="Terms & Conditions" />
           <ListItemIcon>

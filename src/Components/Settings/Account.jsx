@@ -7,7 +7,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
 import Switch from '@mui/material/Switch';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import LoginIcon from '@mui/icons-material/Login';
 import SyncOutlinedIcon from '@mui/icons-material/SyncOutlined';
@@ -60,7 +60,7 @@ export default function Account() {
             >
                 <ListItem >
                     <ListItemIcon>
-                        <AccountCircleOutlinedIcon color='info' />
+                        <Person2OutlinedIcon fontSize='large' className='icon shadow p-1' color='info' />
                     </ListItemIcon>
                     <ListItemText primary="Your Name" />
                     <ListSubheader >Udhav Jadhav</ListSubheader>
@@ -71,7 +71,7 @@ export default function Account() {
 
                 <ListItem>
                     <ListItemIcon>
-                        <LoginIcon color='info'/>
+                        <LoginIcon fontSize='large' className='icon shadow p-1' color='info'/>
                     </ListItemIcon>
                     <ListItemText primary="You'r signed in as" />
                     <Chip onClick={handleClickOpen} sx={{ cursor: 'pointer' }} label="Unvarified" size="small" color='error' />
@@ -105,7 +105,7 @@ export default function Account() {
 
                 <ListItem>
                     <ListItemIcon>
-                        <LockOpenIcon color='info'/>
+                        <LockOpenIcon fontSize='large' className='icon shadow p-1' color='info'/>
                     </ListItemIcon>
                     <ListItemText primary="Change your password" />
                     <ListItemIcon>
@@ -115,7 +115,7 @@ export default function Account() {
 
                 <ListItem>
                     <ListItemIcon>
-                        <SyncOutlinedIcon color='info' />
+                        <SyncOutlinedIcon fontSize='large' className='icon shadow p-1' color='info' />
                     </ListItemIcon>
                     <ListItemText id="switch-list-label-wifi" primary="Sync with Google Fit" />
                     <Switch

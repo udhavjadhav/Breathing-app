@@ -16,8 +16,6 @@ import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css'
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
-import SettingsIcon from '@mui/icons-material/Settings';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
@@ -103,10 +101,10 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}><Person2OutlinedIcon color='info' sx={{m:1}}/>Profile</MenuItem>
-      <MenuItem onClick={handleMenuAccount}><AccountBalanceOutlinedIcon color='info' sx={{m:1}}/>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}><Person2OutlinedIcon fontSize='large' className='icon shadow p-1' color='info' />Profile</MenuItem>
+      <MenuItem onClick={handleMenuAccount}><AccountBalanceOutlinedIcon fontSize='large' className='icon shadow p-1' color='info' />My account</MenuItem>
       {/* <MenuItem onClick={handleMenuSettings}><SettingsIcon sx={{m:1}}/>Settings</MenuItem> */}
-      <MenuItem  onClick={handleMenuLogout}><LogoutOutlinedIcon color='info' sx={{m:1}} /> Logout</MenuItem>
+      <MenuItem  onClick={handleMenuLogout}><LogoutOutlinedIcon fontSize='large' className='icon shadow p-1' color='info' /> Logout</MenuItem>
     </Menu>
   );
   return (

@@ -11,23 +11,6 @@
 #showShadow:hover{
     transform: rotate(360deg);
 }
-/* 
-#main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-} */
-
-/* #text {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-} */
-
 .back{
     float: left;
 }

@@ -1,12 +1,12 @@
 import { Button } from '@mui/material'
 import Navbar from './Navbar/Navbar';
-import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
+import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
 import Divider from '@mui/material/Divider';
 import HomeInfo from './HomeInfo';
 import SongsDetails from './SongsDetails';
 import InnerNav from './InnerNav/InnerNav';
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './HomePage.css';
 function HomePage() {
@@ -42,7 +42,7 @@ function HomePage() {
 
     return (
         <div >
-            {/* <Navbar /> */}
+            <Navbar />
 
             <div className="wrapper" style={{ backgroundColor: '#F0F8FF', padding: '2vh' }}>
                 <div className="sample mt-3">
@@ -55,7 +55,7 @@ function HomePage() {
             </div>
 
             <div className="icons mt-4">
-                <h4 style={{ color: 'darkblue', fontWeight: 'bolder', marginLeft: '2vh' }} ><SelfImprovementIcon fontSize='large' /> Meditation</h4>
+                <h4 style={{ color: 'darkblue', fontWeight: 'bolder', marginLeft: '2vh' }} ><SpaOutlinedIcon /> Meditation</h4>
                 <Divider sx={{ m: 2 }} color='secondary' />
             </div>
 
