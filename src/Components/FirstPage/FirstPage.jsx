@@ -9,10 +9,10 @@ function FirstPage() {
         <div className='firstpage'>
             <div className='d-flex' id='first'>
                 <div className="icon">
-                    <img className='logo' src="src/assets/logo.png" />
+                    <img className='logo' src="/assets/logo.png" />
                 </div>
                 <div className="container text-center">
-                    <img className='welcomeimg' src="src/assets/relax5.webp" alt="" />
+                    <img className='welcomeimg' src="/assets/relax5.webp" alt="" />
                     <h1 id='wish'>Breathings</h1><br />
                     <h6 id='text'>Mindful Breathing app</h6>
                </div>

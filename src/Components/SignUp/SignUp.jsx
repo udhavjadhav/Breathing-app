@@ -116,16 +116,16 @@ export default function SignUp() {
                             }}
                         >
                             <div className="icon">
-                                <img style={{ height: '10vh', width: '10vh', marginBottom: '1vh', borderRadius: '50%', border: '2px solid blue', padding: '10px' }} src="../../src/assets/logo.png" />
+                                <img style={{ height: '10vh', width: '10vh', marginBottom: '1vh', borderRadius: '50%', border: '2px solid blue', padding: '10px' }} src="/assets/logo.png" />
                             </div>
 
                             <Typography component="h1" variant="h5" fontWeight='bolder'>
                                 Create your account
                             </Typography>
 
-                            <Button sx={{ m: 1.5, p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='contained' fullWidth ><img style={{ height: '30px', marginRight: '20px' }} src='src/assets/facebbok.png'></img> Continue with Facebook</Button>
+                            <Button sx={{ m: 1.5, p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='contained' fullWidth ><img style={{ height: '30px', marginRight: '20px' }} src='/assets/facebbok.png'></img> Continue with Facebook</Button>
 
-                            <Button sx={{ p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='outlined' fullWidth><img style={{ height: '30px', marginRight: '15px' }} src='src/assets/google.png'></img> Continue with Google</Button>
+                            <Button sx={{ p: 1.5, borderRadius: '45px', fontWeight: 'bolder' }} variant='outlined' fullWidth><img style={{ height: '30px', marginRight: '15px' }} src='/assets/google.png'></img> Continue with Google</Button>
 
                             <Typography sx={{ m: 2, color: 'gray' }} component="h1" fontWeight='bolder'>
                                 OR LOG IN WITH EMAIL

@@ -12,12 +12,12 @@ function Welcome() {
         <div className='welcome'>
             <div className='container'>
                 <div className="icon2 mb-2 text-center">
-                    <img className='logo' src="src/assets/logo.png" />
+                    <img className='logo' src="/assets/logo.png" />
                 </div>
                 <div className="container text-center mt-4">
                     <h1 id='wish'>Hi Dear, Welcome</h1><br />
                     <p className='para text-primary'>Explore the app, Find some peace of mind to prepare for meditation !!</p>
-                    <img className='welcomeimg' src="src/assets/welcome.webp" alt="" />
+                    <img className='welcomeimg' src="/assets/welcome.jpeg" alt="Loading" />
                 </div>
                 <div className="container text-center">
                     <Button onClick={handleClick}
