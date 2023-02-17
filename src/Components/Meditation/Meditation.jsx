@@ -1,11 +1,10 @@
 import React from 'react'
 import SongsDetails from '../SongsDetails'
-import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
-import Divider from '@mui/material/Divider';
 import InnerNav from '../InnerNav/InnerNav';
 import Navbar from '../Navbar/Navbar'
 import HomeInfo from '../HomeInfo';
 import MedNav from './MedNav';
+import Footer from '../Footer/Footer';
 function Meditation() {
     return (
         <>
@@ -28,6 +27,7 @@ function Meditation() {
                     }
                 </div>
             </div>
+            <Footer/>
             <InnerNav />
         </>
     )

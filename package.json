@@ -10,6 +10,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@faker-js/faker": "^7.6.0",
     "@material-ui/icons": "^4.11.3",
     "@mui/icons-material": "^5.11.0",
     "@mui/joy": "^5.0.0-alpha.65",
@@ -17,6 +18,7 @@
     "@mui/x-date-pickers": "^5.0.16",
     "axios": "^1.2.4",
     "bootstrap": "^5.2.3",
+    "change-case": "^4.1.2",
     "dayjs": "^1.11.7",
     "mobiscroll-react": "^4.0.0",
     "react": "^18.2.0",

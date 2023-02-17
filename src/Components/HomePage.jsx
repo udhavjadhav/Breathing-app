@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './HomePage.css';
+import Footer from './Footer/Footer';
 function HomePage() {
 
     useEffect(() => {
@@ -66,14 +67,16 @@ function HomePage() {
             }}>
                 {
                     SongsDetails.map((element, index) => {
+                        console.log(index)
                         return (
                             <>
-                                <HomeInfo key={index} element={element} />
+                                <HomeInfo key={element.id} element={element} />
                             </>
                         )
                     })
                 }
             </div>
+            <Footer/>
             <InnerNav />
         </div>
     )

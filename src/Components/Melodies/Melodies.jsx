@@ -11,6 +11,7 @@ import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import './Melodies.css'
 import MelodyNav from './MelodyNav';
+// import Footer from '../Footer/Footer';
 
 const Melodies = ({demo}) => {
     const [condition, setCondition] = useState([]);
@@ -86,7 +87,7 @@ const Melodies = ({demo}) => {
 
                     </Accordion>
                 </div>
-           
+            {/* <Footer/> */}
             <InnerNav />
         </>
     )

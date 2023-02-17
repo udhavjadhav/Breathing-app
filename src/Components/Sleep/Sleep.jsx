@@ -3,6 +3,7 @@ import SleepDetails from './SleepDetails';
 import Navbar from '../Navbar/Navbar'
 import SleepNav from './SleepNav';
 import InnerNav from '../InnerNav/InnerNav';
+import Footer from '../Footer/Footer';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -26,10 +27,10 @@ function Sleep() {
                         SleepDetails.map((element, index) => {
                             return (
                                 <>
-                              
+
                                     <Card onClick={() => {
                                         Navigate(`/sleepsongs/${element.id}`)
-                                    }} sx={{ width: 412, maxWidth: '90%', m:2,  flexDirection: 'row' }}>
+                                    }} sx={{ width: 412, maxWidth: '90%', m: 2, flexDirection: 'row' }}>
                                         <CardActionArea>
                                             <CardMedia
                                                 component="img"
@@ -47,15 +48,15 @@ function Sleep() {
                                             </CardContent>
                                         </CardActionArea>
                                     </Card>
-                                
+
                                 </>
                             )
                         })
                     }
                 </div>
             </div>
-
-                    <InnerNav />
+            <Footer/>
+            <InnerNav />
         </>
     )
 }

@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import { Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import RelaxNav from './RelaxNav';
+import Footer from '../Footer/Footer';
 function Meditation() {
     const Navigate = useNavigate();
     const handleClick = () => {
@@ -36,6 +37,7 @@ function Meditation() {
                     }
                 </div>
             </div>
+            <Footer/>
             <InnerNav />
         </>
     )
