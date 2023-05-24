@@ -14,7 +14,7 @@ const HomeInfo = ({ element }) => {
 
     }
     return (
-            <Card onClick={handleClick} sx={{ width:412, maxWidth:'90%',m: 2 , flexDirection:'row'}}>
+            <Card onClick={handleClick} sx={{ width:412,height:260,m:1, maxWidth:'90%'}}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
