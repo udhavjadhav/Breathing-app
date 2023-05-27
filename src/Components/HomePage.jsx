@@ -56,14 +56,16 @@ function HomePage() {
 
       <div
         className="wrapper"
-        style={{ backgroundColor: "#FFF", padding: "2vh" }}>
+        style={{ backgroundColor: "#FFF", padding: "2vh" }}
+      >
         <div className="sample mt-3">
           <h1
             style={{
               marginTop: "10px",
               marginBottom: "20px",
             }}
-            className="d-flex flex-wrap">
+            className="d-flex flex-wrap"
+          >
             {wish + Name}
           </h1>
           <Button variant="outlined">{date}</Button>
@@ -81,7 +83,8 @@ function HomePage() {
             color: "darkblue",
             fontWeight: "bolder",
             marginLeft: "2vh",
-          }}>
+          }}
+        >
           <SpaOutlinedIcon /> Meditation
         </h4>
         <Divider sx={{ m: 2 }} color="secondary" />

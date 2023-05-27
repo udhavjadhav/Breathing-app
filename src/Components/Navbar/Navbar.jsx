@@ -85,7 +85,8 @@ export default function PrimarySearchAppBar() {
         horizontal: "right",
       }}
       open={isMenuOpen}
-      onClose={handleMenuClose}>
+      onClose={handleMenuClose}
+    >
       <MenuItem onClick={handleMenuClose}>
         <Person2OutlinedIcon
           fontSize="large"
@@ -122,11 +123,13 @@ export default function PrimarySearchAppBar() {
           }}
           open={open}
           autoHideDuration={5000}
-          onClose={handleClose}>
+          onClose={handleClose}
+        >
           <Alert
             onClose={handleClose}
             severity="secondary"
-            sx={{ width: "100%", cursor: "pointer" }}>
+            sx={{ width: "100%", cursor: "pointer" }}
+          >
             Meditation class is live! Click Here to Join!
           </Alert>
         </Snackbar>
@@ -134,8 +137,9 @@ export default function PrimarySearchAppBar() {
       <AppBar id="appbar" color="primary" position="static">
         <Toolbar>
           <img
-            style={{ width: "35px", borderRadius:'22%', marginRight: "10px" }}
-            src="./assets/welcome.jpeg"></img>
+            style={{ width: "35px", borderRadius: "22%", marginRight: "10px" }}
+            src="/assets/welcome.jpeg"
+          ></img>
           <Typography
             variant="h6"
             noWrap
@@ -143,7 +147,8 @@ export default function PrimarySearchAppBar() {
             onClick={handleClick}
             sx={{
               display: { sm: "block", fontWeight: "bold", cursor: "pointer" },
-            }}>
+            }}
+          >
             Breathly
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
@@ -151,7 +156,8 @@ export default function PrimarySearchAppBar() {
             <IconButton
               size="large"
               aria-label="show 5 new notifications"
-              color="inherit">
+              color="inherit"
+            >
               <Badge badgeContent={1} color="error">
                 <NotificationsIcon
                   onClick={handleNotification}
@@ -166,13 +172,13 @@ export default function PrimarySearchAppBar() {
               aria-controls={menuId}
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
-              color="inherit">
+              color="inherit"
+            >
               <AccountCircle fontSize="large" />
             </IconButton>
           </Box>
         </Toolbar>
       </AppBar>
-      {/* {renderMobileMenu} */}
       {renderMenu}
     </Box>
   );
