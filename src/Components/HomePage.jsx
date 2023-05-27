@@ -62,7 +62,6 @@ function HomePage() {
             style={{
               marginTop: "10px",
               marginBottom: "20px",
-              fontStyle: "italic",
             }}
             className="d-flex flex-wrap">
             {wish + Name}

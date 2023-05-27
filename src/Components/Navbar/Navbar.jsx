@@ -134,8 +134,8 @@ export default function PrimarySearchAppBar() {
       <AppBar id="appbar" color="primary" position="static">
         <Toolbar>
           <img
-            style={{ width: "25px", marginRight: "10px" }}
-            src="./assets/yoga.svg"></img>
+            style={{ width: "35px", borderRadius:'22%', marginRight: "10px" }}
+            src="./assets/welcome.jpeg"></img>
           <Typography
             variant="h6"
             noWrap
