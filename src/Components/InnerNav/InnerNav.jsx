@@ -40,8 +40,9 @@ export default function InnerNav() {
       <CssBaseline />
       <Paper
         sx={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 1 }}
-        elevation={3}>
-        <div className="bottomNav">
+        elevation={3}
+      >
+        <div className="bottom-nav">
           <BottomNavigation showLabels value={value} onChange={handleChange}>
             <BottomNavigationAction
               onClick={handleClick}

@@ -1,15 +1,15 @@
 import { Button } from "@mui/material";
-import Navbar from "./Navbar/Navbar";
+import Navbar from "../Navbar/Navbar";
 import SpaOutlinedIcon from "@mui/icons-material/SpaOutlined";
 import Divider from "@mui/material/Divider";
-import HomeInfo from "./HomeInfo";
-import SongsDetails from "./SongsDetails";
-import InnerNav from "./InnerNav/InnerNav";
+import HomeInfo from "../HomePage/HomeInfo";
+import SongsDetails from "../SongsDetails";
+import InnerNav from "../InnerNav/InnerNav";
+import Footer from "../Footer/Footer";
+import "./HomePage.css";
 import { useEffect } from "react";
 // import { useNavigate } from 'react-router-dom';
 import axios from "axios";
-import "./HomePage.css";
-import Footer from "./Footer/Footer";
 import Grid from "@mui/material/Grid";
 
 function HomePage() {
@@ -73,7 +73,11 @@ function HomePage() {
             {time}
           </Button>
           <br />
-          <img className="imgrotate" src="/assets/welcome.jpeg" alt="loading" />
+          <img
+            className="rotate-img"
+            src="/assets/welcome.jpeg"
+            alt="loading"
+          />
         </div>
       </div>
 

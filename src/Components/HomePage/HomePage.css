@@ -1,0 +1,10 @@
+.rotate-img {
+  display: flex;
+  height: 35vh;
+  border-radius: 50%;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.rotate-img:hover {
+  transform: rotateY(180deg);
+}

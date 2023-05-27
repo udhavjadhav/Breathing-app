@@ -2,7 +2,7 @@ import React from "react";
 import SongsDetails from "../SongsDetails";
 import Navbar from "../Navbar/Navbar";
 import InnerNav from "../InnerNav/InnerNav";
-import HomeInfo from "../HomeInfo";
+import HomeInfo from "../HomePage/HomeInfo";
 import Button from "@mui/material/Button";
 import { Box, Grid } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -23,7 +23,8 @@ function Meditation() {
             sx={{ fontWeight: "bolder", maxWidth: "50%", m: 2 }}
             fullWidth
             onClick={handleClick}
-            variant="contained">
+            variant="contained"
+          >
             Melodies
           </Button>
         </Box>
@@ -33,11 +34,12 @@ function Meditation() {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",
-          }}>
+          }}
+        >
           <Grid container spacing={1}>
             {SongsDetails.map((element, index) => {
               return (
-                <Grid item xs={6} sm={4} md={4} lg={3} key={index}         >
+                <Grid item xs={6} sm={4} md={4} lg={3} key={index}>
                   <>
                     <HomeInfo element={element} />
                   </>

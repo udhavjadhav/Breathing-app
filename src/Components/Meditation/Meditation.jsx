@@ -2,7 +2,7 @@ import React from "react";
 import SongsDetails from "../SongsDetails";
 import InnerNav from "../InnerNav/InnerNav";
 import Navbar from "../Navbar/Navbar";
-import HomeInfo from "../HomeInfo";
+import HomeInfo from "../HomePage/HomeInfo";
 import MedNav from "./MedNav";
 import Footer from "../Footer/Footer";
 import { Grid } from "@mui/material";
@@ -18,7 +18,8 @@ function Meditation() {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",
-          }}>
+          }}
+        >
           <Grid container spacing={1}>
             {SongsDetails.map((element, index) => {
               return (
